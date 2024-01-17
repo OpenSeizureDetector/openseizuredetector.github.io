@@ -2,10 +2,22 @@
 layout: default
 ---
 
+# About OpenSeizureDetector
+Open Seizure Detector is a system to detect a tonic-clonic epileptic seizure and raise an alarm to warn a carer that the user may need assistance.   
 
-[OpenSeizureDetector main Web Site](https://openseizuredetector.org.uk)
+It uses a smart watch and an Android Phone to:
 
-[OpenSeizureDetector BangleJS App Store](https://openseizuredetector.github.io/BangleSD/index.html)
+  - Measure and analyse the user's movement to detect if the movement is consistent with a seizure.
+  - Measure the user's heart rate and identify abnormal heart rate.
+  - Raise an alarm if the movment or heart rate are consistent with a seizure by:
+      - Generating an alarm sound from the phone.
+      - (optionally) sending an SMS text meassage to selected phone numbers
+      - (optionally) generating alarm sounds from other devices connected over wifi.
+  - Users have the option of signing up to a Data Sharing database to log the data associated with real seizures or false alarms to help with further development of the seizure detection system.
 
-[About](/about/)
+# More Details
+  - [Project Goals](./pages-user/goals.html)
+  - [Installation and Usage Instructions](./pages-user/installation.html)
+  - [Developer Documentation](./pages-developer/developer_overview.html)
 
+[Markdown Examples](./markdown_examples.html)
