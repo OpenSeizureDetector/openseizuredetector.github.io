@@ -18,6 +18,6 @@ It uses a smart watch and an Android Phone to:
 # More Details
   - [Project Goals](./pages-user/goals.html)
   - [Installation and Usage Instructions](./pages-user/installation.html)
-  - [Developer Documentation](./pages-developer/developer_overview.html)
+  - [Developer Documentation](./pages-developer/index.html)
 
 [Markdown Examples](./markdown_examples.html)
