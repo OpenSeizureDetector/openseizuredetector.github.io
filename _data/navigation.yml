@@ -1,0 +1,23 @@
+# Belongs at: /_data/navigation.yml
+
+- title: About
+  url: /pages-about/index.html
+  sublinks:
+    - title: Project Goals
+      url: /pages-about/goals.html
+
+- title: Getting Started
+  url: /pages-user/index.html
+  sublinks:
+    - title: Installation
+      url: /pages-user/installation.html
+    - title: PineTime
+      url: /pages-user/pine-time-installation.html
+
+- title: Development
+  url: /pages-developer/index.html
+  sublinks:
+    - title: System Overview
+      url: /pages-developer/overview.html
+    - title: PineTime
+      url: /pages-developer/pinetime.html

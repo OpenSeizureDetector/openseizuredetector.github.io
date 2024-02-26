@@ -1,6 +1,6 @@
 ---
 layout: default
-title: OSD Development
+title: OSD Development Overview
 ---
 
 # Developer Area
@@ -9,7 +9,6 @@ title: OSD Development
 
 
 ## Watches
-  - [PineTime](./pinetime.md)
 
 
 

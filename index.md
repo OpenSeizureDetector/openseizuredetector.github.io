@@ -1,5 +1,6 @@
 ---
 layout: default
+title: OpenSeizureDetector
 ---
 
 # About OpenSeizureDetector

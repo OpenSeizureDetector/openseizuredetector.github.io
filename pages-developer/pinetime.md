@@ -1,5 +1,6 @@
 ---
 layout: default
+title: OSD on PineTime Watch
 ---
 
 # OpenSeizureDetector on a PineTime watch
