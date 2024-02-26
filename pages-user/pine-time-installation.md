@@ -53,7 +53,7 @@ There is a high level overview of the process below, followed by step-by-step in
 
 | **Step** | **Description** |  **Image** (Click on image for a larger version) | 
 | **1**    | **Set-Up Gadgetbridge** | |
-| 1.1   | **Install the Bangle JS Gadgetbridge app on the phone**.  This can be installed from [Google Play Store](https://play.google.com/store/apps/details?id=com.espruino.gadgetbridge.banglejs) | [![Gadgetbridge](/assets/images/pinetime-installation-images/DSC_0220.JPG)](/assets/images/pinetime-installation-images/DSC_0220.JPG){:target="_blank"}| 
+| 1.1   | **Install the Bangle JS Gadgetbridge app on the phone**.  This can be installed from [Google Play Store](https://play.google.com/store/apps/details?id=com.espruino.gadgetbridge.banglejs) | [![GB](/assets/images/pinetime-installation-images/DSC_0220.JPG)](/assets/images/pinetime-installation-images/DSC_0220.JPG){:target="_blank"}| 
 | 1.2    | **Start Gadgetbridge** and accept the various permissions that it needs. | [![GB_start](/assets/images/pinetime-installation-images/DSC_0223.JPG)](/assets/images/pinetime-installation-images/DSC_0223.JPG){:target="_blank"}| 
 | 1.3    | **Disable Permissions Reminders (for Android Go Phones)**.  Android Go phones do not have all of the notification capabilities of the full Android System, so Gadgetbridge will keep asking for those missing permissions.   Go into the Gadgetbridge settings and disable the 'Check Permission Status' option to prevent this.  | [![img](/assets/images/pinetime-installation-images/DSC_0226.JPG)](/assets/images/pinetime-installation-images/DSC_0226.JPG){:target="_blank"}| 
 | **2** | **Connect PineTime to Phone** | |

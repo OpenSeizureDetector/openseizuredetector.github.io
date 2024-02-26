@@ -3,6 +3,7 @@ layout: default
 title: OpenSeizureDetector
 ---
 
+![system overview](assets/images/osd-system-overview.png)
 # About OpenSeizureDetector
 Open Seizure Detector is a system to detect a tonic-clonic epileptic seizure and raise an alarm to warn a carer that the user may need assistance.   
 

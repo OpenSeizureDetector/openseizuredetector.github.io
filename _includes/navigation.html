@@ -15,7 +15,7 @@
 
 <!-- Then we build the nav bar. -->
 
-    <div class="pure-menu-horizontal">
+<nav class="pure-menu-horizontal">
     <ul class="pure-menu-list">
     {% for entry in site.data.navigation %}
         {% if entry.url == current_page %}
@@ -42,4 +42,4 @@
         {% endif %}
     {% endfor %}
     </ul>
-    </div>
+</nav>
