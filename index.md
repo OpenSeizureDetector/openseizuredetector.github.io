@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: home
 title: OpenSeizureDetector
 ---
 
-![system overview](assets/images/osd-system-overview.png)
 # OpenSeizureDetector
 
 Open Seizure Detector is a system to detect a tonic-clonic epileptic seizure and raise an alarm to warn a carer that the user may need assistance.  
@@ -27,7 +26,10 @@ The android phone:
       - (optionally) generating alarm sounds from other devices connected over wifi.
       - (optionally) upload data to be included anonymously in the Open Seizure Database which will be used to improve the seizure detection algorithms.
  
-  
+![system overview](assets/images/osd-system-overview.png)
+
+
+
 ## Compatible Devices
 
 ### Phone
@@ -44,7 +46,7 @@ The current options for the watch are:
 
 
 # More Details
-  - [Project Goals](./pages-user/goals.html)
+  - [Project Goals](./pages-about/goals.html)
   - [Installation and Usage Instructions](./pages-user/installation.html)
   - [Developer Documentation](./pages-developer/index.html)
 
