@@ -3,9 +3,6 @@ layout: post
 author: graham
 ---
 
-Purchasing a PineTime Watch
-===========================
-
 I recently purchased three PineTime watches from the [Pine64 global store](https://pine64.com/product/pinetime-smartwatch-sealed/), and had them shipped to the UK.
 
 The total cost was $92.96, which included $11.99 shipping, giving a unit cost of $30.99.   This worked out as £76.88 total, £25.63 per item.
