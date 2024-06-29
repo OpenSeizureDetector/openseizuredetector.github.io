@@ -48,4 +48,4 @@ From the manual optimisation shown below it appears that using the default OSD s
 
 To improve the detetion reliability of 'flapping' type seizures without resulting on a lot of additional false alarms, we want to run 2 versions of the OSD algorithm.   One will use the default settings, and the other will be tuned to lower frequency, but have a higher threshold to reduce false alarms.
 
-Next step is to implement this into the Android App and try it for real.   We did once have a 'multi-ROI' mode - if that is still in the code we could modify that to achieve this desired algorithm.
+This is currently (29/06/2024) implemented in a crude form in an experimental development version (V4.2.11x1), which is available at https://github.com/OpenSeizureDetector/Android_Pebble_SD/tree/beta/releases if anyone would like to try it.  I have set the alarm ratio threshold down from the value determined above so that I could set it off by mimicing the movements, so we might get more fase alarms than I have calculated from the database - will update after a few days testing.....
