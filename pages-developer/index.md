@@ -9,6 +9,7 @@ title: OSD Development
 
   - [Original OSD Algorithm](https://www.openseizuredetector.org.uk/?page_id=455)
   - [Flap Detector](./flap-detector.html)
+  - [Performance Assessment](./performance_analysis_nocturnal/performance_analysis_nocturnal.md)
 
 ## Code Structure
 
