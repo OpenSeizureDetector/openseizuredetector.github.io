@@ -19,6 +19,8 @@
   sublinks:
     - title: System Overview
       url: /pages-developer/overview.html
+    - title: Code Structure
+      url: /pages-developer/code_structure/system_overview.html
     - title: PineTime
       url: /pages-developer/pinetime.html
     - title: Web Sites

@@ -24,7 +24,7 @@ The MonkeyC source files are in the [source](https://github.com/OpenSeizureDetec
     - Starts a timer which calls the onTick() function every second.
     - Declares mState which recorts the operating state of the app (used in other components)
     - getInitialView() specifies that the GarminSDView should be used for the initial display for the app.
-  -[GarminSDView.mc](https://github.com/OpenSeizureDetector/Garmin_SD/blob/master/source/GarminSDView.mc) handles drawing the display and interacting with user key presses.  It also starts GarminSDDataHandler which deals with receiving data from the sensors.
+  -  [GarminSDView.mc](https://github.com/OpenSeizureDetector/Garmin_SD/blob/master/source/GarminSDView.mc) handles drawing the display and interacting with user key presses.  It also starts GarminSDDataHandler which deals with receiving data from the sensors.
     - onTick() is called from the GarminSDApp onTick function - it decides whether to re-draw the screen or not - we re-draw the screen as little as possible to reduce battery consumption.
     - the SdDeligate class handles user interaction (menu selection, button presses etc.)
     - the GarminSDSettingsMenu and GarminSDSettingsMenuDeligate classes handle display and user interaction of the app settings menu.
