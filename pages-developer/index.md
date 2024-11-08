@@ -13,7 +13,7 @@ title: OSD Development
 
 ## Code Structure
 
-...to follow...
+  - [System Overview](./code_structure/system_overview.html)
 
 ## Watches
   - [PineTime](./pinetime.html)
