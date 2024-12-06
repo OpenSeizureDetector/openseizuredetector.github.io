@@ -15,6 +15,9 @@ The app is written in 'MonkeyC' which is quite like C++ but with less reliable t
 
 The repository [README file](https://github.com/OpenSeizureDetector/Garmin_SD/blob/master/README.md) includes build instructions - I recommend using the Visual Studio Code method rather than the command line.
 
+The 'develop' branch includes a new 'Dev Container' which is a build environment which contains the Garmin SDK and watch simulators and should allow you to compile and test the app without much configuration - we would appreciate feedback on whether this is true or not so we can update the devcontainer or documentation to make
+it easier for future developers.
+
 ## Code Structure
 ### Source Code
 The MonkeyC source files are in the [source](https://github.com/OpenSeizureDetector/Garmin_SD/tree/master/source) folder.
