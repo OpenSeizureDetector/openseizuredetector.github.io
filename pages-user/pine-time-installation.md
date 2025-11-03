@@ -14,7 +14,7 @@ This page describes how to set up a new PineTime watch for use with [OpenSeizure
 
 
 ## Performance Notes 
-  * Testing has shown that the PineTime works well as a seizure detector, and gives comparable performance to Garmin watches using motion detection, achieving over 80% detection reliability (see (PineTime_Performance_Report.pdf) for details)
+  * Testing has shown that the PineTime works well as a seizure detector, and gives comparable performance to Garmin watches using motion detection, achieving over 80% detection reliability (see [PineTime_Performance_Report.pdf](PineTime_Performance_Report.pdf) for details)
   * Its heart rate sensor performs well for relatively small arm movements, but it is not as good as Garmin devices at measuring heart rate when doing vigorous movements, so it will not be as good as a Garmin for using heart rate alarms.
   * Overall though, PineTime is a good, low cost alernative to a Garmin watch for use as a seizure detector.  (We have been using it for our son for over a year to test it).
 
