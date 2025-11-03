@@ -14,9 +14,9 @@ This page describes how to set up a new PineTime watch for use with [OpenSeizure
 
 
 ## Performance Notes 
-  * Initial testing of the watch shows that it works well and is expected to have similar performance for seizure-like movement detection to Garmin watches, so it is expected to have a similarly high seizure detection rate.    
-  * Its heart rate sensor performs well for relatively small arm movements, but it is not as good as Garmin devices at measuring heart rate when doing vigorous movements like running.
-  * Overall though, it seems like a good, low cost alernative to a Garmin watch for use as a seizure detector.
+  * Testing has shown that the PineTime works well as a seizure detector, and gives comparable performance to Garmin watches using motion detection, achieving over 80% detection reliability (see (PineTime_Performance_Report.pdf) for details)
+  * Its heart rate sensor performs well for relatively small arm movements, but it is not as good as Garmin devices at measuring heart rate when doing vigorous movements, so it will not be as good as a Garmin for using heart rate alarms.
+  * Overall though, PineTime is a good, low cost alernative to a Garmin watch for use as a seizure detector.  (We have been using it for our son for over a year to test it).
 
 
 ## Requirements
@@ -35,6 +35,8 @@ This page describes how to set up a new PineTime watch for use with [OpenSeizure
 ## Installation
 
 There is a high level overview of the process below, followed by step-by-step instructions.
+
+Note that we have recently developed a separate PineTime Firmware Updater app which will download the firmware from the OpenSeizureDetector web site and flash it onto a watch to save the user having to do it manually as described below.   We will update these instructions once the new app is available on Play Store
 
 ### GadgetBridge
   - Install [GadgetBridge](https://play.google.com/store/apps/details?id=com.espruino.gadgetbridge.banglejs&hl=en&gl=US) on the mobile phone.
