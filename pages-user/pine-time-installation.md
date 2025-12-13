@@ -4,6 +4,8 @@ layout: default
 
 # PineTime Watch Installation Instructions
 
+## Introduction
+
 [PineTime](https://www.pine64.org/pinetime/) is a low cost, Open Source smart watch which can be used as a data source to measure acceleration and heart rate for seizure detection.   
 
 We have developed a [custom firmware](https://github.com/OpenSeizureDetector/PineTimeSD) for the PineTime watch which makes it compatible with [OpenSeizureDetector](https://openseizuredetector.org.uk).
@@ -11,6 +13,16 @@ We have developed a [custom firmware](https://github.com/OpenSeizureDetector/Pin
 This page describes how to set up a new PineTime watch for use with [OpenSeizureDetector](https://openseizuredetector.org.uk).
 
 [![PineTime Image](/assets/images/pinetime-installation-images/pinetime.png)](https://www.pine64.org/pinetime/)
+
+There are a couple of rather unprofessional videos showing OpenSeizureDetector running on PineTime and the firmware installation process below:
+
+https://www.youtube.com/watch?v=mbL0VD49hsg
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mbL0VD49hsg?si=7HoYI2IeJ7aygODR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+https://www.youtube.com/watch?v=D_0-vbt0xsc
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D_0-vbt0xsc?si=r96HU6o7gl9N1igT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 
 
 ## Performance Notes 
