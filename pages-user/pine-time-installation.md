@@ -14,12 +14,16 @@ This page describes how to set up a new PineTime watch for use with [OpenSeizure
 
 [![PineTime Image](/assets/images/pinetime-installation-images/pinetime.png)](https://www.pine64.org/pinetime/)
 
-There are a couple of rather unprofessional videos showing OpenSeizureDetector running on PineTime and the firmware installation process below:
 
-https://www.youtube.com/watch?v=mbL0VD49hsg
+## Video Demonstrations
+There are a couple of rather unprofessional videos showing OpenSeizureDetector running on PineTime and the firmware installation process below with detailed descriptoin in the rest of this page.
+
+### OpenSeizureDetector Operation on PineTime
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mbL0VD49hsg?si=7HoYI2IeJ7aygODR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-https://www.youtube.com/watch?v=D_0-vbt0xsc
+### PineTime Firmware Installation Demonstration
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/D_0-vbt0xsc?si=r96HU6o7gl9N1igT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
