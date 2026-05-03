@@ -51,7 +51,7 @@ Alternatively, find the IP address in your router's connected devices list.
 Install OpenSeizureDetector on the second device. When you first launch it, the setup
 wizard starts automatically.
 
-[![Welcome screen](images/01_welcome.png)](images/01_welcome.png){:target="_blank"}
+[<img alt="Welcome screen" src="images/01_welcome.png" width="200">](images/01_welcome.png){:target="_blank"}
 
 Press **Next** to continue.
 
@@ -61,7 +61,7 @@ Press **Next** to continue.
 
 On the *Choose Data Source* screen, select **Network (Remote Monitoring)**.
 
-[![Data source selection - Network selected](images/02_datasource_network.png)](images/02_datasource_network.png){:target="_blank"}
+[<img alt="Data source selection - Network selected" src="images/02_datasource_network.png" width="200">](images/02_datasource_network.png){:target="_blank"}
 
 | Option | Description |
 |--------|-------------|
@@ -80,7 +80,7 @@ The network configuration screen asks for the IP address of the primary device.
 
 ### Empty state (before entering IP)
 
-[![Network configuration - empty](images/03_datasource_config_network_empty.png)](images/03_datasource_config_network_empty.png){:target="_blank"}
+[<img alt="Network configuration - empty" src="images/03_datasource_config_network_empty.png" width="200">](images/03_datasource_config_network_empty.png){:target="_blank"}
 
 The screen explains:
 - This device will receive alarm notifications from the remote (primary) device
@@ -91,7 +91,7 @@ The screen explains:
 
 Tap the IP address field and type the IP address of the primary device.
 
-[![Network configuration - IP address entered and validated](images/03b_datasource_config_network_validated.png)](images/03b_datasource_config_network_validated.png){:target="_blank"}
+[<img alt="Network configuration - IP address entered and validated" src="images/03b_datasource_config_network_validated.png" width="200">](images/03b_datasource_config_network_validated.png){:target="_blank"}
 
 As you type a valid IP address (four numbers separated by dots, e.g. `192.168.1.50`),
 the app automatically attempts to connect to the primary device on port 8080.
@@ -119,7 +119,7 @@ Press **Next** once validation succeeds (shown in green).
 The wizard skips the algorithm selection step (since algorithms run on the primary device)
 and goes straight to the completion screen.
 
-[![Setup complete screen](images/04_complete.png)](images/04_complete.png){:target="_blank"}
+[<img alt="Setup complete screen" src="images/04_complete.png" width="200">](images/04_complete.png){:target="_blank"}
 
 The summary shows:
 - **Data Source** - Network (Remote Device)

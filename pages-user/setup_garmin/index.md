@@ -28,7 +28,7 @@ instructions: [openseizuredetector.org.uk](https://openseizuredetector.org.uk)
 
 When you first install and launch OpenSeizureDetector, the setup wizard starts automatically.
 
-[![Welcome screen](images/01_welcome.png)](images/01_welcome.png){:target="_blank"}
+[<img alt="Welcome screen" src="images/01_welcome.png" width="200">](images/01_welcome.png){:target="_blank"}
 
 The wizard guides you through:
 - Choosing your data source (the watch)
@@ -43,7 +43,7 @@ Press **Next** to continue, or **Skip** to configure manually via Settings later
 
 On the *Choose Data Source* screen, select **Garmin Watch**.
 
-[![Data source selection - Garmin selected](images/02_datasource_garmin.png)](images/02_datasource_garmin.png){:target="_blank"}
+[<img alt="Data source selection - Garmin selected" src="images/02_datasource_garmin.png" width="200">](images/02_datasource_garmin.png){:target="_blank"}
 
 | Option | Description |
 |--------|-------------|
@@ -60,7 +60,7 @@ Press **Next** to continue.
 
 The Garmin configuration screen summarises the steps needed to set up your watch.
 
-[![Garmin configuration screen](images/03_datasource_config_garmin.png)](images/03_datasource_config_garmin.png){:target="_blank"}
+[<img alt="Garmin configuration screen" src="images/03_datasource_config_garmin.png" width="200">](images/03_datasource_config_garmin.png){:target="_blank"}
 
 **Note:** For full details refer to the *Garmin Seizure Detector* page on the
 OpenSeizureDetector website: [openseizuredetector.org.uk](https://openseizuredetector.org.uk)
@@ -105,7 +105,7 @@ Press **Next** once the watch app is confirmed running.
 
 Choose which seizure detection algorithms to enable. You can select **more than one**.
 
-[![Algorithm selection screen](images/04_algorithms.png)](images/04_algorithms.png){:target="_blank"}
+[<img alt="Algorithm selection screen" src="images/04_algorithms.png" width="200">](images/04_algorithms.png){:target="_blank"}
 
 | Algorithm | Description |
 |-----------|-------------|
@@ -125,7 +125,7 @@ Choose which seizure detection algorithms to enable. You can select **more than 
 
 After pressing Next, a short confirmation dialog appears for each enabled algorithm:
 
-[![Algorithm configuration dialog](images/04b_algorithm_dialog.png)](images/04b_algorithm_dialog.png){:target="_blank"}
+[<img alt="Algorithm configuration dialog" src="images/04b_algorithm_dialog.png" width="200">](images/04b_algorithm_dialog.png){:target="_blank"}
 
 - **OSD Algorithm** - default settings applied. Tap **OK**.
 - **OSD with Flap Detection** - default settings applied. Tap **OK**.
@@ -140,7 +140,7 @@ After pressing Next, a short confirmation dialog appears for each enabled algori
 
 The final screen confirms your configuration.
 
-[![Setup complete screen](images/05_complete.png)](images/05_complete.png){:target="_blank"}
+[<img alt="Setup complete screen" src="images/05_complete.png" width="200">](images/05_complete.png){:target="_blank"}
 
 The summary shows:
 - **Data Source** - Garmin Watch

@@ -22,7 +22,7 @@ You will need:
 
 When you first install and launch OpenSeizureDetector, the setup wizard starts automatically.
 
-[![Welcome screen](images/01_welcome.png)](images/01_welcome.png){:target="_blank"}
+[<img alt="Welcome screen" src="images/01_welcome.png" width="200">](images/01_welcome.png){:target="_blank"}
 
 The wizard guides you through:
 - Choosing your data source (the watch)
@@ -37,7 +37,7 @@ Press **Next** to continue, or **Skip** to configure manually via Settings later
 
 On the *Choose Data Source* screen, select **PineTime Watch (Recommended)**.
 
-[![Data source selection - PineTime selected](images/02_datasource_pinetime.png)](images/02_datasource_pinetime.png){:target="_blank"}
+[<img alt="Data source selection - PineTime selected" src="images/02_datasource_pinetime.png" width="200">](images/02_datasource_pinetime.png){:target="_blank"}
 
 | Option | Description |
 |--------|-------------|
@@ -54,7 +54,7 @@ Press **Next** to continue.
 
 The PineTime configuration screen guides you through three sub-steps.
 
-[![PineTime configuration screen](images/03_datasource_config_pinetime.png)](images/03_datasource_config_pinetime.png){:target="_blank"}
+[<img alt="PineTime configuration screen" src="images/03_datasource_config_pinetime.png" width="200">](images/03_datasource_config_pinetime.png){:target="_blank"}
 
 ### 3a - Install the PineTime Updater App
 
@@ -96,7 +96,7 @@ Press **Next** when your watch appears in green.
 
 Choose which seizure detection algorithms to enable. You can select **more than one**.
 
-[![Algorithm selection screen](images/04_algorithms.png)](images/04_algorithms.png){:target="_blank"}
+[<img alt="Algorithm selection screen" src="images/04_algorithms.png" width="200">](images/04_algorithms.png){:target="_blank"}
 
 | Algorithm | Description |
 |-----------|-------------|
@@ -115,7 +115,7 @@ Choose which seizure detection algorithms to enable. You can select **more than 
 
 After pressing Next, a short confirmation dialog appears for each enabled algorithm:
 
-[![OSD Algorithm configuration dialog](images/04b_algorithm_osd_dialog.png)](images/04b_algorithm_osd_dialog.png){:target="_blank"}
+[<img alt="OSD Algorithm configuration dialog" src="images/04b_algorithm_osd_dialog.png" width="200">](images/04b_algorithm_osd_dialog.png){:target="_blank"}
 
 - **OSD Algorithm** - default settings applied automatically. Tap **OK**.
 - **OSD with Flap Detection** - default settings applied. Tap **OK**.
@@ -129,7 +129,7 @@ After pressing Next, a short confirmation dialog appears for each enabled algori
 
 The final screen confirms your configuration.
 
-[![Setup complete screen](images/05_complete.png)](images/05_complete.png){:target="_blank"}
+[<img alt="Setup complete screen" src="images/05_complete.png" width="200">](images/05_complete.png){:target="_blank"}
 
 The summary shows:
 - **Data Source** - your PineTime name and Bluetooth MAC address
