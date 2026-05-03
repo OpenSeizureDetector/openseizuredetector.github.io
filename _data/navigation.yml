@@ -11,7 +11,13 @@
   sublinks:
     - title: Installation
       url: /pages-user/installation.html
-    - title: PineTime
+    - title: Setup PineTime
+      url: /pages-user/setup_pinetime/
+    - title: Setup Garmin
+      url: /pages-user/setup_garmin/
+    - title: Setup Network Mode
+      url: /pages-user/setup_network/
+    - title: PineTime (legacy)
       url: /pages-user/pine-time-installation.html
 
 - title: Development
