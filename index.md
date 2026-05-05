@@ -49,5 +49,3 @@ The current options for the watch are:
   - [Project Goals](./pages-about/goals.html)
   - [Installation and Usage Instructions](./pages-user/installation.html)
   - [Developer Documentation](./pages-developer/index.html)
-
-[Markdown Examples](./markdown_examples.html)

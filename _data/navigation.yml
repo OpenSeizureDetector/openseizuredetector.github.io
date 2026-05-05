@@ -12,11 +12,11 @@
     - title: Installation
       url: /pages-user/installation.html
     - title: Setup PineTime
-      url: /pages-user/setup_pinetime/
+      url: /pages-user/setup_pinetime/index.html
     - title: Setup Garmin
-      url: /pages-user/setup_garmin/
+      url: /pages-user/setup_garmin/index.html
     - title: Setup Network Mode
-      url: /pages-user/setup_network/
+      url: /pages-user/setup_network/index.html
     - title: PineTime (legacy)
       url: /pages-user/pine-time-installation.html
 
