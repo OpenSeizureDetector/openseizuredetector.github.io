@@ -1,0 +1,3 @@
+# _config_ftp.yml
+url: "https://openseizuredetector.org.uk"
+baseurl: "/static/osd_pages"

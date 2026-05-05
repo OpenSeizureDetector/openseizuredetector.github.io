@@ -3,7 +3,7 @@ description: Free, Open Source tools to Alert Carers if someone suffers an Epile
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-modernist
-base_url: /
+baseurl: .
 
 github:
   repository_url: http://github.com/OpenSeizureDetector
