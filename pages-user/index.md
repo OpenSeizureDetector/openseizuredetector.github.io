@@ -5,11 +5,14 @@ title: Getting Started
 
 # Getting Started with OpenSeizureDetector
 
-## Installation Instructions
-Please follow the installation instructions for your specific watch as listed below:
+## Setup Guide
 
-  * [Garmin Watch](https://www.openseizuredetector.org.uk/?page_id=1894)
-  * [PineTime Watch](pine-time-installation.html)
+Follow the setup guide to install the app and configure your data source:
+
+  * [**OpenSeizureDetector Setup Guide**](setup/index.html)
+    * [PineTime Watch Data Source Setup](setup/setup_pinetime.html)
+    * [Garmin Watch Data Source Setup](setup/setup_garmin.html)
+    * [Network Mode Data Source Setup](setup/setup_network.html)
 
 ## Troubleshooting
   * [General Troubleshooting Tips](https://www.openseizuredetector.org.uk/?page_id=1324#Troubleshooting)

@@ -1,9 +1,15 @@
-# Setting Up OpenSeizureDetector as a Remote Alarm Receiver (Network Mode)
+---
+layout: default
+title: Network Mode — Data Source Setup
+---
 
-This guide explains how to set up a second Android phone (or tablet) as a **remote alarm
-receiver** for an existing OpenSeizureDetector installation. This is useful when the person
-being monitored is in a different room and you need alarm notifications on a second device,
-for example a phone carried by a carer overnight.
+# Network Mode — Data Source Setup
+
+<a href="index.html" class="btn-back">← Back to Main Setup Guide</a>
+
+This page covers configuring **Network (Remote Monitoring)** as your data source
+(Step 3 of the setup wizard). Network mode lets a second Android phone or tablet receive
+alarm notifications from an existing OpenSeizureDetector installation on a primary device.
 
 ## How Network Mode Works
 
@@ -21,13 +27,13 @@ for example a phone carried by a carer overnight.
 
 Both devices must be on the **same Wi-Fi network**.
 
-## Before You Start
-
 You will need:
 - A **second** Android phone or tablet running Android 8.0 or later
 - An **existing** OpenSeizureDetector installation on a primary device (with a watch connected)
 - Both devices on the same Wi-Fi network
 - The IP address of the primary device (see below)
+
+In the app, you should be on the *Configure Network Connection* screen.
 
 ### Finding the Primary Device IP Address
 
@@ -41,52 +47,24 @@ Alternatively, find the IP address in your router's connected devices list.
 
 ---
 
-## Step 1 - Welcome Screen
-
-Install OpenSeizureDetector on the second device. When you first launch it, the setup
-wizard starts automatically.
-
-<img src="images/01_welcome.png" alt="Welcome screen" width="300">
-
-Press **Next** to continue.
-
----
-
-## Step 2 - Choose Data Source
-
-On the *Choose Data Source* screen, select **Network (Remote Monitoring)**.
-
-<img src="images/02_datasource_network.png" alt="Data source selection - Network selected" width="300">
-
-| Option | Description |
-|--------|-------------|
-| Phone (Demo Mode) | Uses the phone accelerometer - for testing only |
-| PineTime Watch (Recommended) | PineTime wrist watch seizure detection |
-| Garmin Watch | Garmin smart watch seizure detection |
-| **Network (Remote Monitoring)** | Receives alarms from another OSD device on your Wi-Fi |
-
-Press **Next** to continue.
-
----
-
-## Step 3 - Configure Network Connection
+## Configure Network Connection
 
 The network configuration screen asks for the IP address of the primary device.
 
 ### Empty state (before entering IP)
 
-<img src="images/03_datasource_config_network_empty.png" alt="Network configuration - empty" width="300">
+[<img alt="Network configuration - empty" src="images/03_datasource_config_network_empty.png" width="200">](images/03_datasource_config_network_empty.png){:target="_blank"}
 
 The screen explains:
 - This device will receive alarm notifications from the remote (primary) device
 - Both devices must be on the same Wi-Fi network
-- No seizure detection algorithms run on this device - those run on the primary device
+- No seizure detection algorithms run on this device — those run on the primary device
 
 ### Entering the IP address
 
 Tap the IP address field and type the IP address of the primary device.
 
-<img src="images/03b_datasource_config_network_validated.png" alt="Network configuration - IP address entered and validated" width="300">
+[<img alt="Network configuration - IP address entered and validated" src="images/03b_datasource_config_network_validated.png" width="200">](images/03b_datasource_config_network_validated.png){:target="_blank"}
 
 As you type a valid IP address (four numbers separated by dots, e.g. `192.168.1.50`),
 the app automatically attempts to connect to the primary device on port 8080.
@@ -95,45 +73,27 @@ the app automatically attempts to connect to the primary device on port 8080.
 
 | Status | Meaning |
 |--------|---------|
-| Green: *Server validated successfully* | Connected - tap Next to continue |
+| Green: *Server validated successfully* | Connected — tap Next to continue |
 | Orange: *Cannot reach server* | Check IP address and that both devices are on the same Wi-Fi |
-| Red: *Invalid IP address format* | The address format is wrong - check you have typed it correctly |
+| Red: *Invalid IP address format* | The address format is wrong — check you have typed it correctly |
 
-A **Retry** button appears if validation fails - tap it after checking your settings.
+A **Retry** button appears if validation fails — tap it after checking your settings.
 
 **Note:** The **Next** button only becomes enabled once the primary device is successfully
-reached. Algorithm selection is skipped entirely in Network mode - the algorithms are
+reached. Algorithm selection is skipped entirely in Network mode — the algorithms are
 configured on the primary device.
 
 Press **Next** once validation succeeds (shown in green).
 
 ---
 
-## Step 4 - Setup Complete
+Once the network connection is validated and you have pressed **Next**, your data source
+setup is complete. Return to the main setup guide for the setup completion screen.
 
-The wizard skips the algorithm selection step (since algorithms run on the primary device)
-and goes straight to the completion screen.
+> **Network mode reminder:** Algorithm selection is skipped — jump to
+> [Setup Complete](index.html#step-5--setup-complete) on the main setup page.
 
-<img src="images/04_complete.png" alt="Setup complete screen" width="300">
-
-The summary shows:
-- **Data Source** - Network (Remote Device)
-- **Enabled Algorithms** - Configured on remote device
-
-Press **Get Started** to launch the monitoring screen.
-
----
-
-## What Happens Next
-
-1. OpenSeizureDetector connects to the primary device over Wi-Fi
-2. The primary device sends alarm status updates every 2 seconds
-3. When the primary device raises a Warning or Alarm, this device:
-   - Sounds the alarm tone
-   - Displays a notification
-   - Shows the alarm status on screen
-
-The second device mirrors the alarm state of the primary device in near real-time.
+<a href="index.html#step-5--setup-complete" class="btn-back">← Back to Main Setup — proceed to Setup Complete</a>
 
 ---
 
@@ -158,4 +118,4 @@ The second device mirrors the alarm state of the primary device in near real-tim
 | Validation succeeds but no alarms received | Ensure OSD is running and connected to the watch on the primary device |
 | Connection drops overnight | Disable Wi-Fi sleep/power-saving on both devices |
 
-For more information visit https://openseizuredetector.org.uk
+For more information visit [openseizuredetector.org.uk](https://openseizuredetector.org.uk)

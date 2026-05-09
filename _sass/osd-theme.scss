@@ -485,3 +485,90 @@ footer {
     content: 'at https://github.com/';
   }
 }
+
+// ─── Data source selection buttons ────────────────────────────────────────────
+
+.datasource-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.btn-datasource {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 180px;
+  min-width: 160px;
+  padding: 24px 16px;
+  background: $osd-blue;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: background 0.2s, transform 0.15s, box-shadow 0.15s;
+
+  &:hover {
+    background: $osd-navy;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  }
+
+  .btn-icon {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    line-height: 1;
+  }
+
+  .btn-title {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #fff;
+  }
+
+  .btn-desc {
+    font-size: 0.85em;
+    opacity: 0.88;
+  }
+}
+
+// ─── Back / navigation button ─────────────────────────────────────────────────
+
+.btn-back {
+  display: inline-block;
+  padding: 9px 18px;
+  background: $osd-bg;
+  color: $osd-blue;
+  border: 2px solid $osd-blue;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.95em;
+  text-decoration: none;
+  margin-bottom: 24px;
+
+  &:hover {
+    background: $osd-blue;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+// ─── Info / callout box ───────────────────────────────────────────────────────
+
+.info-box {
+  background: lighten($osd-light-blue, 16%);
+  border-left: 4px solid $osd-blue;
+  border-radius: 0 6px 6px 0;
+  padding: 14px 18px;
+  margin: 0 0 20px;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
