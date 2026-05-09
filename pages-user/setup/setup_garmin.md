@@ -35,14 +35,24 @@ OpenSeizureDetector works with Garmin smartwatches that support ConnectIQ SDK le
 higher. Garmin's [Compatible Devices](https://developer.garmin.com/connect-iq/compatible-devices/)
 page lists which watches support which SDK level.
 
-A list of devices known to work is maintained at:
-[openseizuredetector.org.uk — Compatible Devices](https://www.openseizuredetector.org.uk/?page_id=1324#Compatible_Devices)
+The table below lists watches that are known to have been tested. If you are using a watch
+not listed here, please report your experience to graham@openseizuredetector.org.uk.
 
-**Known issues with specific models:**
-- **VenuSQ / VenuSQ 2** — avoid these; there is a known issue with the app stopping after
-  several hours.
-- **Vivoactive 5** — users have reported difficulties; avoid for now.
-- **Forerunner 55** - Does not send accelerometer data reliably - known bug in Garmin's software - [bug report](https://forums.garmin.com/developer/connect-iq/i/bug-reports/bad-accelerometer-data-captured-by-fr55-after-latest-update).
+**Note:** Forerunner 35, 45 and 235 are **not** compatible.
+
+| Watch | Status |
+|-------|--------|
+| Venu SQ | **Avoid** — known issue with freezing after several hours |
+| VenuSQ 2 | Use with caution — some users report similar freezing issues, others report no problems |
+| Vivoactive 3 | ✓ Works, no issues (battery life slightly shorter than VenuSQ) |
+| Vivoactive 4 | ✓ Works — the 4s (small) version has short battery life (~12 hours) |
+| Vivoactive 5 | **Avoid** — users have reported difficulties |
+| Vivoactive HR | ✓ Works well — former 'production' device before switching to PineTime |
+| Venu 2 | ✓ Works, no issues |
+| Forerunner 245 | ✓ Works — battery life ~15 hours (shorter than expected) |
+| Forerunner 255s | ✓ Works, no issues; good battery life (80% after 24 hours) |
+| Forerunner 55 | **Avoid** — newer Garmin firmware causes data to be sent every 20 s instead of the required 5 s; [bug reported to Garmin](https://forums.garmin.com/developer/connect-iq/i/bug-reports/bad-accelerometer-data-captured-by-fr55-after-latest-update) |
+| Forerunner 735xt | ✓ Works — requires software update via Garmin Connect; use watch app **V1.2 only** (not newer versions); HR response is slow after watch is removed from wrist |
 
 If you are buying a watch specifically for OpenSeizureDetector, purchase from a retailer
 that accepts returns in case it does not work as expected.
@@ -95,15 +105,15 @@ below (note: it is slightly out of date, so read the steps here too):
 
 **1. Download the watch app file**
 
-On a computer, download the latest `GarminSD.prg` file from the
+On a computer, download the latest version of `GarminSD_vx.y.z.prg` from the
 [GarminSD releases page](https://github.com/OpenSeizureDetector/Garmin_SD/releases/latest)
-on GitHub.
+on GitHub, and rename it to GarminSD.prg.
 
 > **Compatibility note:** If the latest release does not work on your watch, try the
 > `v2.0.7x` variant (compiled with newer Garmin tools; works on newer watches but not some
 > older models). Previous versions are also available in the
-> [build folder](https://github.com/OpenSeizureDetector/Garmin_SD/tree/master/WatchApp/build)
-> — rename whichever version you use to `GarminSD.prg` on the watch.
+> [Releases page](https://github.com/OpenSeizureDetector/Garmin_SD/releases).
+> Rename whichever version you use to `GarminSD.prg` on the watch.
 
 ---
 
@@ -218,20 +228,70 @@ GarminSD will now appear directly in the favourites list with a single button pr
 
 ## Troubleshooting
 
+### GarminSD.prg disappears from the APPS folder
+
+On many newer Garmin watches, the `GarminSD.prg` file disappears from the `GARMIN/APPS`
+folder on the computer as soon as the watch is disconnected from USB — this is **normal
+and expected**. The watch firmware moves the file into its own internal storage when it
+processes it. The app will still appear in the watch's app list even though the file is
+gone from the USB drive. You do not need to re-copy the file.
+
+---
+
+### Common Problems
+
 | Problem | Solution |
 |---------|----------|
-| Watch app not found on USB drive | Navigate to the `GARMIN/APPS` folder on the watch drive; create it if it does not exist |
-| GarminSD does not appear in watch app list | Rename the file to exactly `GarminSD.prg` (remove any version number) and re-copy |
-| App shows `FAULT` status | Ensure GarminSD is actively running on the watch, then restart OSD on the phone |
-| Phone shows *Connecting* indefinitely | Re-launch GarminSD on the watch; restart OSD on the phone |
-| Heart rate not displayed | Wear the watch snugly; ensure the HR sensor window on the back is clean |
+| `GARMIN/APPS` folder not found on USB drive | Create the folder manually on the watch drive, then copy `GarminSD.prg` into it |
+| GarminSD does not appear in watch app list | Rename the file to exactly `GarminSD.prg` (remove any version number) and re-copy; safely eject and reconnect the watch |
+| GarminSD.prg vanishes from APPS after disconnect | Normal on newer watches — the watch has imported it; check the full apps list on the watch |
+| Watch shows `FAULT` / phone shows *Fault* | Check GarminSD is actively running on the watch (it shuts down when charging); also check the data source on the phone is set to **Garmin** not *Pebble* |
+| Phone shows *Connecting* indefinitely | Re-launch GarminSD on the watch; restart OSD on the phone; check Garmin Connect shows the watch as *Connected* |
+| Display alternates between `OK` and `FAULT` | Usually caused by the system restarting after a settings change — force-stop OSD on the phone then restart it |
+| Heart rate not displayed | Wear the watch snugly on the wrist; ensure the HR sensor window on the back of the watch is clean |
 | Garmin Connect pairing fails | Follow Garmin's official pairing instructions for your specific watch model |
-| Watch keeps buzzing with notifications | Disable App Notifications for OpenSeizureDetector in Garmin Connect Settings |
-| OSD shut down by Android in background | Set OSD to *Not optimised* in your phone's Battery Optimisation settings |
-| Watch appears to work then stops after hours | Avoid VenuSQ / VenuSQ2 models; try a different compatible Garmin model |
+| Watch keeps buzzing with notifications | Disable App Notifications for OpenSeizureDetector in Garmin Connect → Settings → Notifications → App Notifications |
+| OSD shut down by Android in background | Set OSD to *Not optimised* in your phone's Battery Optimisation settings; some phones also need OSD set as a *Protected* app |
+| Watch app shuts down after a while | Some watches (e.g. Fenix 6) have a power-saving timeout that closes inactive apps — adjust the activity timeout in the watch settings |
+| Watch appears to work then stops after hours | Known issue with VenuSQ / VenuSQ2 models — switch to a different compatible Garmin model |
+| No data received despite app appearing to run | Try: turn off phone Bluetooth; unpair the watch; go to phone Settings → Apps → OpenSeizureDetector → Storage and tap *Clear Data* and *Clear Cache*; restart phone; re-pair the watch |
+| Still no data after all the above | Some phones (especially Xiaomi/Huawei) have security features that block the watch-to-app communication — try a different Android phone to confirm |
 
-For the full troubleshooting procedure and FAQ (including watch error codes) see:
-[openseizuredetector.org.uk](https://openseizuredetector.org.uk)
+---
+
+### Watch Error Codes
+
+The GarminSD watch app sometimes displays an error such as `ERR -400`. These codes come
+from the Garmin software and indicate that the watch cannot communicate with the
+OpenSeizureDetector phone app.
+
+| Error Code | Meaning | Likely Cause |
+|------------|---------|--------------|
+| ERR 0 | Unknown error | Outdated watch app not compatible with the current Garmin Connect version — update to the latest GarminSD |
+| ERR -104 | BLE connection unavailable | Bluetooth is off on the phone, or the watch is not paired/connected via Garmin Connect; alternatively the Android system has killed OSD to save battery — set OSD battery usage to *Not optimised* |
+| ERR -300 | Network request timed out | The watch could not reach the OSD phone app — check OSD is running (icon in phone status bar); disable battery optimisation for OSD; check the phone's power saving mode has not put OSD to sleep |
+
+The full list of Garmin error codes is documented at:
+[developer.garmin.com — Communications API](https://developer.garmin.com/connect-iq/api-docs/Toybox/Communications.html)
+
+---
+
+### Other Notes
+
+- **Watch cannot run other apps simultaneously** — GarminSD must run in the foreground,
+  so you cannot use other watch apps (e.g. Running) at the same time. Disable watch
+  notifications while OSD is running to avoid interference with data transfer.
+
+- **Watch charges = GarminSD stops** — placing the watch on its charger closes GarminSD.
+  To avoid fault alerts on the phone, open OSD on the phone and select *Start/Stop Server*
+  to shut down the background service before charging the watch.
+
+- **Multiple phones paired to the watch** — if the watch is paired to both a phone and a
+  tablet, the wrong device may receive the data. Ensure only the intended phone is
+  connected via Garmin Connect when OSD is running.
+
+For further troubleshooting steps and debugging instructions see:
+[openseizuredetector.org.uk — Garmin Usage Instructions](https://www.openseizuredetector.org.uk/?page_id=1324)
 
 Please report issues or successes to graham@openseizuredetector.org.uk or the
 [OpenSeizureDetector Facebook page](https://facebook.com/openseizuredetector).
