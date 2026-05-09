@@ -121,17 +121,18 @@ The firmware is transferred over Bluetooth. Keep the phone close to the watch an
 *Installation Successful!* is displayed. Use the back button (**&lt;**) to close the updater
 and return to the OpenSeizureDetector app using the phone 'Back' button.
 
-The watch Bluetooth address is recorded automatically — no manual entry needed in section 3c below.
+After the firmware has been installed the PineTime will reboot and show the new clock face.    The installation is only temporary until it is validated as described in Section 3.4 below.
+
 
 ---
 
 
 ### 3.3 - Connect (Scan) for the Watch
 
-If you have just installed the watch software using the instructions above, this section should be pre-populated so there is no need to scan for the watch again.     
+If you have just installed the watch software using the instructions above, the watch bluetooth address should be pre-populated so there is no need to scan for the watch again.     
 
 If the watch address is not shown, tap **Scan for PineTime Watch** to search for your watch over Bluetooth. A list of nearby
-Bluetooth devices appears - select your PineTime.
+Bluetooth devices appears - select your PineTime (which is likely to be listed as 'InfiniTime').
 
 Once selected, the screen shows the device name and MAC address in green, for example:
 

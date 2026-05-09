@@ -42,12 +42,12 @@ A list of devices known to work is maintained at:
 - **VenuSQ / VenuSQ 2** — avoid these; there is a known issue with the app stopping after
   several hours.
 - **Vivoactive 5** — users have reported difficulties; avoid for now.
+- **Forerunner 55** - Does not send accelerometer data reliably - known bug in Garmin's software - [bug report](https://forums.garmin.com/developer/connect-iq/i/bug-reports/bad-accelerometer-data-captured-by-fr55-after-latest-update).
 
 If you are buying a watch specifically for OpenSeizureDetector, purchase from a retailer
 that accepts returns in case it does not work as expected.
 
 **Phone requirements:** The phone must run the full Android edition (not Android Go).
-Avoid Huawei and Xiaomi phones due to known security feature incompatibilities.
 
 ---
 
@@ -93,28 +93,58 @@ below (note: it is slightly out of date, so read the steps here too):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/modxwJLAFjQ" title="GarminSD watch app installation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-1. **Download the watch app** — on a computer, download the latest `GarminSD.prg` file
-   from the [GarminSD releases page](https://github.com/OpenSeizureDetector/Garmin_SD/releases/latest)
-   on GitHub.
-   - If the latest release does not work on your watch, try the `v2.0.7x` variant (compiled
-     with newer Garmin tools; works on newer watches but not some older models).
+**1. Download the watch app file**
 
-2. **Connect the watch to the computer** via its charging/data USB cable. The watch
-   appears as a removable drive.
+On a computer, download the latest `GarminSD.prg` file from the
+[GarminSD releases page](https://github.com/OpenSeizureDetector/Garmin_SD/releases/latest)
+on GitHub.
 
-3. **Copy the file onto the watch** — open the watch drive and copy `GarminSD.prg` into
-   the `GARMIN/APPS` folder. Create the folder if it does not exist.
-   - On some older watches, the file must be renamed to exactly `GarminSD.prg` (i.e.
-     remove any version number from the filename) or it will not appear in the apps list.
+> **Compatibility note:** If the latest release does not work on your watch, try the
+> `v2.0.7x` variant (compiled with newer Garmin tools; works on newer watches but not some
+> older models). Previous versions are also available in the
+> [build folder](https://github.com/OpenSeizureDetector/Garmin_SD/tree/master/WatchApp/build)
+> — rename whichever version you use to `GarminSD.prg` on the watch.
 
-4. **Safely eject the watch** and disconnect the USB cable.
+---
 
-5. **Verify the app is present** — on the watch, navigate to the full apps list. You
-   should see **GarminSD** in the list.
+**2. Copy the file onto the watch via USB**
 
-6. **Start the GarminSD app** on the watch — the heart rate reading should update every
-   second. See [Starting the Watch App](#starting-the-watch-app) below for detailed
-   button-press instructions.
+Connect the watch to the computer using its charging/data USB cable. The watch appears as a
+removable drive. Open the watch drive and copy `GarminSD.prg` into the **`GARMIN/APPS`**
+folder (create the folder if it does not exist).
+
+> On some older watches the file must be named exactly `GarminSD.prg` (with no version
+> number) or it will not appear in the apps list.
+
+Safely eject the watch and disconnect the USB cable.
+
+---
+
+**3. Find GarminSD in the apps list**
+
+[<img alt="Vivoactive 3 all-apps list showing GarminSD" src="images/garmin_02_apps_list_garminsd.jpg" width="200">](images/garmin_02_apps_list_garminsd.jpg){:target="_blank"}
+
+On the watch, press the main side button to open the favourites list, then scroll to the
+**four-dots grid icon** and press it to open the full apps list. Scroll to the bottom —
+**GarminSD** should appear there.
+
+---
+
+**4. Start GarminSD**
+
+Tap **GarminSD** to launch it. For the first 5–10 seconds the app shows the version number:
+
+[<img alt="GarminSD starting — version number displayed" src="images/garmin_03_garminsd_version.jpg" width="200">](images/garmin_03_garminsd_version.jpg){:target="_blank"}
+
+The version number is then replaced by the live seizure detector status and heart rate:
+
+[<img alt="GarminSD running — showing OK status and HR" src="images/garmin_04_garminsd_ok.jpg" width="200">](images/garmin_04_garminsd_ok.jpg){:target="_blank"}
+
+The display shows **OK** (or WARNING / ALARM / FAULT), the current heart rate updated every
+second, and the battery percentage. The GarminSD app also runs on older rectangular Garmin
+watches:
+
+[<img alt="GarminSD running on a VivoactiveHR" src="images/garmin_05_garminsd_vivoactivehr.jpg" width="200">](images/garmin_05_garminsd_vivoactivehr.jpg){:target="_blank"}
 
 Press **Next** in the phone app once the GarminSD watch app is confirmed running.
 
@@ -134,14 +164,44 @@ The exact button layout varies by Garmin model. The instructions below are for t
 
 Once GarminSD.prg is installed and the watch is disconnected from the computer:
 
-1. Press the **main side button** to open the list of favourite apps.
-2. Scroll up until you see the **four-dots grid icon** and press it to open the full app list.
-3. Scroll to the bottom of the list — **GarminSD** should appear there.
-4. Tap **GarminSD** to launch it.
+**1. Open the favourites list**
 
-When the app starts, it displays the version number for the first 5–10 seconds, then
-switches to showing the seizure detector status (**OK / WARNING / ALARM / FAULT**) and
-a live heart rate reading updated every second.
+Press the **main side button** once. You see the list of favourite apps — Run, Bike, Walk
+and others:
+
+[<img alt="Vivoactive 3 favourites list showing four-dots icon" src="images/garmin_01_favourites_list.jpg" width="200">](images/garmin_01_favourites_list.jpg){:target="_blank"}
+
+Scroll up until you see the **four-dots grid icon** at the bottom of the list and press it
+to open the full list of all installed apps.
+
+---
+
+**2. Find and launch GarminSD**
+
+[<img alt="All-apps list showing GarminSD entry" src="images/garmin_02_apps_list_garminsd.jpg" width="200">](images/garmin_02_apps_list_garminsd.jpg){:target="_blank"}
+
+Scroll to the bottom of the full apps list — **GarminSD** should appear there. Tap
+**GarminSD** to launch it.
+
+---
+
+**3. GarminSD running**
+
+For the first 5–10 seconds the app shows the firmware version number:
+
+[<img alt="GarminSD just started showing version number" src="images/garmin_03_garminsd_version.jpg" width="200">](images/garmin_03_garminsd_version.jpg){:target="_blank"}
+
+The version number is then replaced by the live seizure detector status and heart rate:
+
+[<img alt="GarminSD running showing OK and heart rate" src="images/garmin_04_garminsd_ok.jpg" width="200">](images/garmin_04_garminsd_ok.jpg){:target="_blank"}
+
+The display shows the status (**OK** / WARNING / ALARM / FAULT), the current heart rate
+updated every second, and the battery percentage. The app works similarly on older
+rectangular Garmin models such as the VivoactiveHR:
+
+[<img alt="GarminSD running on a VivoactiveHR" src="images/garmin_05_garminsd_vivoactivehr.jpg" width="200">](images/garmin_05_garminsd_vivoactivehr.jpg){:target="_blank"}
+
+---
 
 ### Adding GarminSD to Your Favourites
 
