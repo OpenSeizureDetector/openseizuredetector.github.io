@@ -5,6 +5,10 @@ title: Getting Started
 
 # Getting Started with OpenSeizureDetector
 
+## Using OSD Version 5
+
+Read the [OpenSeizureDetector Version 5 introduction](using-openseizuredetector-v5.html) for a walkthrough of startup, basic mode, advanced tabs, and shutdown.
+
 ## Setup Guide
 
 Follow the setup guide to install the app and configure your data source:

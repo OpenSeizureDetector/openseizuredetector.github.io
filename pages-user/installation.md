@@ -4,6 +4,8 @@ layout: default
 
 # Installation Instructions
 
+For an overview of day-to-day use after setup, see [Using OpenSeizureDetector Version 5](using-openseizuredetector-v5.html).
+
 Please follow the installation instructions for your specific watch as listed below:
 
   * [Garmin Watch](setup_garmin/)

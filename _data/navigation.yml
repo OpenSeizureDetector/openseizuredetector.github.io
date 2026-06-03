@@ -9,18 +9,22 @@
 - title: Getting Started
   url: /pages-user/index.html
   sublinks:
-    - title: Installation
-      url: /pages-user/installation.html
-    - title: Setup
+    - title: Installation & Setup
       url: /pages-user/setup/index.html
-    - title: Setup PineTime
-      url: /pages-user/setup/setup_pinetime.html
-    - title: Setup Garmin
-      url: /pages-user/setup/setup_garmin.html
-    - title: Setup Network Mode
-      url: /pages-user/setup/setup_network.html
-    - title: PineTime (legacy)
-      url: /pages-user/pine-time-installation.html
+    - title: Using OpenSeizureDetector
+      url: /pages-user/using-openseizuredetector-v5.html
+
+- title: Seizure Detection
+  url: /pages-user/seizure-detection/index.html
+  sublinks:
+    - title: Original OSD Algorithm
+      url: /pages-user/seizure-detection/original-osd-algorithm.html
+    - title: Machine Learning (ML) Algorithm
+      url: /pages-user/seizure-detection/machine-learning-ml-algorithm.html
+    - title: Heart Rate Alarms
+      url: /pages-user/seizure-detection/heart-rate-alarms.html
+    - title: Fall Detection
+      url: /pages-user/seizure-detection/fall-detection.html
 
 - title: Development
   url: /pages-developer/index.html

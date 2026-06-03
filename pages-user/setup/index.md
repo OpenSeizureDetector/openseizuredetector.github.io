@@ -117,9 +117,9 @@ Choose which seizure detection algorithms to enable. You can select **more than 
 
 | Algorithm | Description |
 |-----------|-------------|
-| **ML Algorithm (Recommended)** | Machine Learning / AI detection. Good sensitivity with fewer false alarms. Improves over time via community data sharing. |
-| Heart Rate Alerts | Detects abnormal heart rate. Requires a Garmin watch for reliable HR measurement. |
-| **OSD Algorithm** | Original proven algorithm. Good for overnight use; may false-alarm on repetitive movements (brushing teeth, washing dishes etc.). |
+| **ML Algorithm (Recommended)** | Machine Learning / AI detection. Good sensitivity with fewer false alarms. Improves over time via community data sharing. [How it works and settings](../seizure-detection/machine-learning-ml-algorithm.html). |
+| Heart Rate Alerts | Detects abnormal heart rate. Requires a Garmin watch for reliable HR measurement. [How it works and settings](../seizure-detection/heart-rate-alarms.html). |
+| **OSD Algorithm** | Original proven algorithm. Good for overnight use; may false-alarm on repetitive movements (brushing teeth, washing dishes etc.). [How it works and settings](../seizure-detection/original-osd-algorithm.html). |
 | OSD with Flap Detection | Enhanced OSD that also detects arm flapping — maximum night-time tonic-clonic detection. |
 
 **At least one algorithm must be selected** before Next is enabled.
@@ -174,7 +174,8 @@ This screen:
 Once everything checks out, the app opens the **main monitoring screen** where live status
 is displayed and seizure detection is active.
 
-> A full overview of the start-up screen and main monitoring UI will be added here shortly.
+See [Using OpenSeizureDetector](../using-openseizuredetector-v5.html) for an overview of
+using the app once it is set-up.
 
 ---
 
