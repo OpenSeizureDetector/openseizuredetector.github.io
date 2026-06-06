@@ -12,24 +12,31 @@ It uses a frequency analysis approach and has been part of OpenSeizureDetector s
 
 At a high level:
 
-1. Collect a time window of acceleration samples.
+1. Collect a time window of acceleration samples (5 seconds at 25 Hz = 125 samples)
 2. Convert the signal into the frequency domain (FFT).
-3. Measure power in a seizure-focused frequency band.
-4. Compare that power and its ratio against thresholds.
+3. Measure power in a seizure-focused frequency band, 3-8 Hz (Region of Interest, ROI).
+4. Compare the power in the ROI and and the ratio of the ROI power to whole spectrum power against thresholds.
 5. Report an algorithm alarm when both threshold checks pass.
 
 ```mermaid
-flowchart LR
+flowchart TB
     A[Acceleration samples] --> B[FFT]
-    B --> C[ROI power between AlarmFreqMin and AlarmFreqMax]
-    B --> D[Total spectral power up to cutoff]
-    C --> E[Check 1: ROI power > AlarmThresh]
-    C --> F[Check 2: 10 x ROI power / spectrum power > AlarmRatioThresh]
-    D --> F
-    E --> G{Both checks true?}
-    F --> G
-    G -->|Yes| H[OSD algorithm alarm]
-    G -->|No| I[OSD algorithm OK]
+    B --> C["'ROI power 
+    (between AlarmFreqMin and AlarmFreqMax)'"]
+    B --> D[Total spectral power]
+    C --> G
+    D --> G["'Spectrum Ratio
+    (ROI Power / Total Spectral Power)'"]
+    C --> E{"'Check 1: 
+    ROI power 
+    > AlarmThresh'"}
+    E --> |No| I[OSD algorithm OK]
+    E --> |Yes| F
+    G --> F{"'Check 2: 
+    Spectrum Ratio 
+    > AlarmRatioThresh'"}
+    F -->|Yes| H[OSD algorithm alarm]
+    F -->|No| I
 ```
 
 ## User settings
