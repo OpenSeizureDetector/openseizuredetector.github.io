@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<div class="section">
+
+  <!-- HEADER -->
+  <header class="section-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+      <p class="section-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+
+  <!-- INTRO -->
+  {% if page.intro %}
+  <section class="section-intro">
+    <p>{{ page.intro }}</p>
+  </section>
+  {% endif %}
+
+  <!-- MAIN CONTENT -->
+  <section class="section-content">
+    {{ content }}
+  </section>
+
+  <!-- OPTIONAL NAV CARDS -->
+  {% if page.cards %}
+  <section class="section-cards">
+
+    {% for card in page.cards %}
+    <div class="card">
+      <h3>{{ card.title }}</h3>
+      <p>{{ card.description }}</p>
+
+      {% if card.links %}
+      <ul>
+        {% for link in card.links %}
+          <li><a href="{{ link.url | relative_url }}">{{ link.text }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+    </div>
+    {% endfor %}
+
+  </section>
+  {% endif %}
+
+  <!-- BACK LINK -->
+  <footer class="section-footer">
+    <p><a href="/">← Back to Home</a></p>
+  </footer>
+
+</div>

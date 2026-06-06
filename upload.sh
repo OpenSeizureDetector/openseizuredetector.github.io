@@ -12,6 +12,6 @@ bundle exec jekyll build --config _config.yml,_config_osd.yml
 
 # 2. Upload only changed files using lftp
 echo "Uploading to web server..."
-lftp -e "set ssl:verify-certificate no; open ftp.openseizuredetector.org.uk; mirror -R --ignore-time --parallel=5 --delete ./_site /public_html/static/osd_pages; quit"
+lftp  -e "set ssl:verify-certificate no; open ftp.gb.stackcp.com; mirror -R --ignore-time --parallel=5 --delete ./_site /public_html/static/osd_pages; quit"
 
 echo "Done!"

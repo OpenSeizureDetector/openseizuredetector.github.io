@@ -1,39 +1,11 @@
-# Belongs at: /_data/navigation.yml
-
+- title: Home
+  url: /
+- title: User Guide
+  url: /pages-user/index.html
+- title: Developers
+  url: /pages-developer/index.html
 - title: About
   url: /pages-about/index.html
-  sublinks:
-    - title: Project Goals
-      url: /pages-about/goals.html
-
-- title: Getting Started
-  url: /pages-user/index.html
-  sublinks:
-    - title: Installation & Setup
-      url: /pages-user/setup/index.html
-    - title: Using OpenSeizureDetector
-      url: /pages-user/using-openseizuredetector-v5.html
-
-- title: Seizure Detection
-  url: /pages-user/seizure-detection/index.html
-  sublinks:
-    - title: Original OSD Algorithm
-      url: /pages-user/seizure-detection/original-osd-algorithm.html
-    - title: Machine Learning (ML) Algorithm
-      url: /pages-user/seizure-detection/machine-learning-ml-algorithm.html
-    - title: Heart Rate Alarms
-      url: /pages-user/seizure-detection/heart-rate-alarms.html
-    - title: Fall Detection
-      url: /pages-user/seizure-detection/fall-detection.html
-
-- title: Development
-  url: /pages-developer/index.html
-  sublinks:
-    - title: System Overview
-      url: /pages-developer/overview.html
-    - title: Code Structure
-      url: /pages-developer/code_structure/system_overview.html
-    - title: PineTime
-      url: /pages-developer/pinetime.html
-    - title: Web Sites
-      url: /pages-developer/website.html
+- title: News
+  url: /news/
+  absolute: true

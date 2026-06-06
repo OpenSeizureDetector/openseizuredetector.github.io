@@ -2,15 +2,103 @@
 layout: default
 ---
 
-<h1>Latest News</h1>
+<div class="home">
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>OpenSeizureDetector</h1>
+    <p>Free, open source tools to alert carers when someone may be having a seizure.</p>
 
-{{ content }}
+    <div class="cta-buttons">
+      <a href="{{ '/pages-user/index.html' | relative_url }}" class="btn">Get Started</a>
+      <a href="{{ '/pages-about/' | relative_url }}" class="btn">Learn More</a>
+      <a href="/news/" class="btn">Latest News</a>
+    </div>
+  </section>
+
+  <hr/>
+
+  <!-- WHAT IT IS -->
+  <section>
+    <h2>What is OpenSeizureDetector?</h2>
+    <p>
+      OpenSeizureDetector uses a smartwatch and an Android phone to monitor movement
+      and heart rate to detect possible tonic-clonic seizures and alert carers.
+    </p>
+    <p>
+      It is designed to work on low-cost hardware so that it is accessible to as many
+      people as possible.
+    </p>
+  </section>
+
+  <hr/>
+
+  <!-- AUDIENCE ROUTING -->
+  <section class="audiences">
+
+    <div class="card">
+      <h3>New Users</h3>
+      <p>Understand what the system does and how to get started.</p>
+      <ul>
+        <li><a href="{{ '/pages-about/' | relative_url }}">About the project</a></li>
+        <li><a href="{{ '/pages-user/installation.html' | relative_url }}">Installation guide</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Existing Users</h3>
+      <p>Setup help, troubleshooting and day-to-day usage.</p>
+      <ul>
+        <li><a href="{{ '/pages-user/' | relative_url }}">User documentation</a></li>
+        <li><a href="/news/">Latest updates</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Developers</h3>
+      <p>Source code, architecture and contributing.</p>
+      <ul>
+        <li><a href="{{ '/pages-developer/' | relative_url }}">Developer information</a></li>
+        <li><a href="https://github.com/OpenSeizureDetector">GitHub repositories</a></li>
+      </ul>
+    </div>
+
+  </section>
+
+  <hr/>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <h2>How it Works</h2>
+    <ol>
+      <li>A smartwatch measures movement and heart rate</li>
+      <li>An Android phone analyses this data</li>
+      <li>An alert is raised if patterns suggest a seizure</li>
+    </ol>
+  </section>
+
+  <hr/>
+
+  <!-- NEWS -->
+  <section>
+    <h2>Latest News</h2>
+    <ul id="news-list">
+      <li>Loading updates…</li>
+    </ul>
+    <p><a href="/news/">View all news</a></p>
+  </section>
+
+  <hr/>
+
+  <!-- DISCLAIMER -->
+  <section class="disclaimer">
+    <p>
+      <strong>Important:</strong> This system is not a medical device and has not been
+      subjected to clinical trials. It is intended to support carers, not replace
+      professional monitoring.
+    </p>
+  </section>
+
+</div>
+
+<script src="{{ '/assets/js/wp-news.js' | relative_url }}"></script>

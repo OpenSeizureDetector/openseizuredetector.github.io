@@ -1,24 +1,27 @@
 ---
-layout: default
-title: Getting Started
+layout: section
+title: User Guide
+subtitle: Installation, setup and day-to-day use of OpenSeizureDetector
+intro: >
+  This section helps you install and use OpenSeizureDetector. Start here if you
+  are new, or use the links below to find specific topics.
+
+cards:
+  - title: Getting Started
+    description: Install the system and complete initial setup.
+    links:
+      - text: Installation Instructions
+        url: /pages-user/setup/index.html
+
+  - title: Using the System
+    description: Learn how to use OpenSeizureDetector daily.
+    links:
+      - text: Using OpenSeizureDetector
+        url: /pages-user/using-openseizuredetector-v5.html
+
+  - title: Troubleshooting
+    description: Solve common problems and issues.
+    links:
+      - text: Troubleshooting
+        url: https://openseizuredetector.org.uk/?page_id=1894
 ---
-
-# Getting Started with OpenSeizureDetector
-
-## Using OSD Version 5
-
-Read the [OpenSeizureDetector Version 5 introduction](using-openseizuredetector-v5.html) for a walkthrough of startup, basic mode, advanced tabs, and shutdown.
-
-## Setup Guide
-
-Follow the setup guide to install the app and configure your data source:
-
-  * [**OpenSeizureDetector Setup Guide**](setup/index.html)
-    * [PineTime Watch Data Source Setup](setup/setup_pinetime.html)
-    * [Garmin Watch Data Source Setup](setup/setup_garmin.html)
-    * [Network Mode Data Source Setup](setup/setup_network.html)
-
-## Troubleshooting
-  * [General Troubleshooting Tips](https://www.openseizuredetector.org.uk/?page_id=1324#Troubleshooting)
-  * [Garmin VenuSQ Watch Firmware Downgrade](garmin_venusq_downgrade.html)
-
