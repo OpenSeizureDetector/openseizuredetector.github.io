@@ -18,6 +18,10 @@ cards:
     links:
       - text: Using OpenSeizureDetector
         url: /pages-user/using-openseizuredetector-v5.html
+      - text: Seizure Detection Algorithms
+        url: /pages-user/seizure-detection/
+
+
 
   - title: Troubleshooting
     description: Solve common problems and issues.

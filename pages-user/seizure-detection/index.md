@@ -5,7 +5,8 @@ title: Seizure Detection Algorithms
 
 # Seizure Detection Algorithms
 
-OpenSeizureDetector can run more than one detection algorithm at the same time.
+OpenSeizureDetector can use one or more different methods ('Algorithms') to detect seizures.   Some aim to detect the shaking movement associated with a tonic-clonic seizure, and others detect more general conditions such as abnormal heart rate or a fall.
+
 This section explains what each algorithm does and which settings you can tune.
 
 - [Original OSD Algorithm](original-osd-algorithm.html)
