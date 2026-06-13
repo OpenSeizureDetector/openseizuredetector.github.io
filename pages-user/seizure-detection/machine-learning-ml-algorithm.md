@@ -14,14 +14,16 @@ The app feeds recent acceleration data into one or more ML models and uses model
 
 ```mermaid
 flowchart TD
-    A[Raw acceleration stream] --> B[Build model input window]
-    B --> C{Movement level above MlAccelStdThresholdPct?}
+    A[Raw acceleration stream] --> B[Collect required amount of data for the model]
+    B --> C{"Movement level above
+    Threshold?"}
     C -->|No| D[Return probability 0]
     C -->|Yes| E[Run each enabled ML model]
     E --> F[Get seizure probability per model]
     F --> G[Compare with MlSeizureProbabilityThresholdPct]
     G --> H[Per-model ALARM or OK]
     H --> I[Combine with voting strategy]
+    I --> J["Return Combined result (ALARM or OK)"]
 ```
 
 ## User settings
@@ -57,3 +59,8 @@ flowchart LR
 
 - Model metadata can provide recommended thresholds when models are installed.
 - If you manually tune thresholds, your user-set values are retained.
+
+
+# Available Models
+
+## DeepEpiCnn_Run24

@@ -12,14 +12,16 @@ The app supports three heart-rate checks that can run together.
 
 ```mermaid
 flowchart TD
-    A[Incoming heart rate value] --> B[Simple threshold check]
-    A --> C[Adaptive threshold check around short rolling average]
-    A --> D[Long rolling average threshold check]
-    B --> E{Any HR check in ALARM?}
-    C --> E
-    D --> E
+    A[Incoming heart rate value] 
+    A --> H{Measured HR outside of thresholds?}
+    H --> |Yes| F[Calculate Adaptive threshold from short term rolling average]
+    H --> |No | C[Calculate short term rolling average]
+    C --> E{Measured HR outside of Adaptive Thresholds?}
     E -->|Yes| F[Heart Rate algorithm ALARM]
-    E -->|No| G[Heart Rate algorithm OK]
+    E --> |No| D[Calculate long term rolling average]
+    D --> K{Long Term Average HR outside of Thresholds?}
+    K -->|Yes| F[Heart Rate algorithm ALARM]
+    K -->|No| G[Heart Rate algorithm OK]
 ```
 
 The Heart Rate detector is made of three separate checks that can run in parallel:

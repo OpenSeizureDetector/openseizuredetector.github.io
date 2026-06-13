@@ -1,0 +1,35 @@
+======================================================================
+deepEpiCnnModel_pytorch (.pt) - Comprehensive Statistics Summary
+======================================================================
+
+*** EVENT-LEVEL STATISTICS (MOST IMPORTANT) ***
+======================================================================
+Total Events: 3521
+True Seizure Events: 44
+True Non-Seizure Events: 3477
+
+Model - Event-Level Metrics:
+  Accuracy: 0.8498
+  Sensitivity/TPR: 0.8409
+  FPR: 0.1501
+  TP=37, FP=522, TN=2955, FN=7
+  Detected Seizures: 559/44
+
+OSD Algorithm - Event-Level Metrics:
+  Sensitivity/TPR: 0.7500
+  FPR: 0.2266
+  Detected Seizures: 821/44
+
+
+DATAPOINT-LEVEL STATISTICS (for reference):
+----------------------------------------------------------------------
+Model - Accuracy: 0.9757
+Model - Sensitivity/TPR: 0.4129
+Model - FPR: 0.0180
+Model - TP=507, FP=1968, TN=107311, FN=721
+
+OSD Algorithm - Accuracy: 0.9472
+OSD Algorithm - Sensitivity/TPR: 0.0839
+OSD Algorithm - FPR: 0.0431
+OSD Algorithm - TP=103, FP=4714, TN=104565, FN=1125
+======================================================================

@@ -7,12 +7,18 @@ layout: default
   <!-- HERO -->
   <section class="hero">
     <h1>OpenSeizureDetector</h1>
-    <p>Free, open source tools to alert carers when someone may be having a seizure.</p>
+    <p class="hero-tagline">Free, open source tools to detect tonic-clonic seizures and alert carers instantly.</p>
+
+    <div class="hero-features">
+      <a href="{{ '/pages-user/faq.html' | relative_url }}#affordable" class="feature-badge" title="Click to learn why it's so affordable">💰 Affordable</a>
+      <a href="{{ '/pages-user/faq.html' | relative_url }}#open-source" class="feature-badge" title="Click to learn why open source matters">🔓 Open Source</a>
+      <a href="{{ '/pages-user/faq.html' | relative_url }}#does-it-work" class="feature-badge" title="Click to see reliability data">⚡ Reliable</a>
+      <a href="{{ '/pages-about/privacy-policy.html' | relative_url }}" class="feature-badge" title="Click to read our privacy policy">🔒 Private</a>
+    </div>
 
     <div class="cta-buttons">
-      <a href="{{ '/pages-user/index.html' | relative_url }}" class="btn">Get Started</a>
-      <a href="{{ '/pages-about/' | relative_url }}" class="btn">Learn More</a>
-      <a href="/news/" class="btn">Latest News</a>
+      <a href="{{ '/pages-user/setup/index.html' | relative_url }}" class="btn btn-primary">Install Now</a>
+      <a href="{{ '/pages-about/' | relative_url }}" class="btn btn-secondary">Learn More</a>
     </div>
   </section>
 
@@ -21,14 +27,25 @@ layout: default
   <!-- WHAT IT IS -->
   <section>
     <h2>What is OpenSeizureDetector?</h2>
+    
+    <div style="float: right; margin: 0 0 20px 20px; max-width: 500px;">
+      <img src="{{ '/assets/images/diagram.png' | relative_url }}" alt="OpenSeizureDetector system diagram showing smartwatch, phone, and carers" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    </div>
+
     <p>
       OpenSeizureDetector uses a smartwatch and an Android phone to monitor movement
-      and heart rate to detect possible tonic-clonic seizures and alert carers.
+      and heart rate to detect possible tonic-clonic seizures and alert carers immediately.
     </p>
     <p>
-      It is designed to work on low-cost hardware so that it is accessible to as many
-      people as possible.
+      Designed for affordability and accessibility. It requires a basic Android phone and a compatible watch that costs from just £35.
+      No subscriptions, or internet connection required. It is fully configurable by the user.
     </p>
+
+    <div style="margin-top: 20px; padding: 15px; background: #f0f4f8; border-left: 4px solid #2471a3; border-radius: 4px; clear: both;">
+      <strong>✓ ~81% seizure detection rate</strong> | 
+      <strong>✓ Local alerts via WiFi or SMS</strong> | 
+      <strong>✓ Continuous self-testing</strong>
+    </div>
   </section>
 
   <hr/>
@@ -37,29 +54,32 @@ layout: default
   <section class="audiences">
 
     <div class="card">
-      <h3>New Users</h3>
-      <p>Understand what the system does and how to get started.</p>
+      <h3>👤 New Users</h3>
+      <p>Get started with a step-by-step guide to installing and setting up the system.</p>
       <ul>
-        <li><a href="{{ '/pages-about/' | relative_url }}">About the project</a></li>
-        <li><a href="{{ '/pages-user/installation.html' | relative_url }}">Installation guide</a></li>
+        <li><a href="{{ '/pages-about/' | relative_url }}">About OpenSeizureDetector</a></li>
+        <li><a href="{{ '/pages-user/setup/index.html' | relative_url }}">Installation Guide</a></li>
+        <li><a href="{{ '/pages-user/faq.html' | relative_url }}">FAQ</a></li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>Existing Users</h3>
-      <p>Setup help, troubleshooting and day-to-day usage.</p>
+      <h3>📱 Existing Users</h3>
+      <p>Usage tips, troubleshooting, data sharing, and latest updates for current users.</p>
       <ul>
-        <li><a href="{{ '/pages-user/' | relative_url }}">User documentation</a></li>
-        <li><a href="/news/">Latest updates</a></li>
+        <li><a href="{{ '/pages-user/' | relative_url }}">User Documentation</a></li>
+        <li><a href="{{ '/pages-user/troubleshooting.html' | relative_url }}">Troubleshooting</a></li>
+        <li><a href="{{ '/pages-user/data-sharing/index.html' | relative_url }}">Data Sharing</a></li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>Developers</h3>
-      <p>Source code, architecture and contributing.</p>
+      <h3>💻 Developers</h3>
+      <p>Contribute to the project - source code, architecture, and development guides.</p>
       <ul>
-        <li><a href="{{ '/pages-developer/' | relative_url }}">Developer information</a></li>
-        <li><a href="https://github.com/OpenSeizureDetector">GitHub repositories</a></li>
+        <li><a href="{{ '/pages-developer/' | relative_url }}">Developer Info</a></li>
+        <li><a href="https://github.com/OpenSeizureDetector">GitHub</a></li>
+        <li><a href="{{ '/pages-about/getting-involved.html' | relative_url }}">Get Involved</a></li>
       </ul>
     </div>
 
@@ -69,23 +89,94 @@ layout: default
 
   <!-- HOW IT WORKS -->
   <section>
-    <h2>How it Works</h2>
-    <ol>
-      <li>A smartwatch measures movement and heart rate</li>
-      <li>An Android phone analyses this data</li>
+    <h2>How It Works</h2>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-around; margin: 30px 0; align-items: center;">
+      <div style="flex: 1; min-width: 150px; text-align: center;">
+        <div style="font-size: 2.5em; margin-bottom: 10px;">⌚</div>
+        <strong>Monitor</strong>
+        <p style="font-size: 0.9em;">Smartwatch measures movement & heart rate</p>
+      </div>
+      <div style="font-size: 2em; flex-shrink: 0; color: #2471a3;">→</div>
+      <div style="flex: 1; min-width: 150px; text-align: center;">
+        <div style="font-size: 2.5em; margin-bottom: 10px;">📱</div>
+        <strong>Analyze</strong>
+        <p style="font-size: 0.9em;">Android phone processes the data</p>
+      </div>
+      <div style="font-size: 2em; flex-shrink: 0; color: #2471a3;">→</div>
+      <div style="flex: 1; min-width: 150px; text-align: center;">
+        <div style="font-size: 2.5em; margin-bottom: 10px;">🔔</div>
+        <strong>Alert</strong>
+        <p style="font-size: 0.9em;">Carers notified via SMS or WiFi</p>
+      </div>
+    </div>
+    <ol style="margin-top: 20px;">
+      <li>Smartwatch continuously monitors acceleration and heart rate</li>
+      <li>Android phone analyses this data</li>
       <li>An alert is raised if patterns suggest a seizure</li>
     </ol>
   </section>
 
   <hr/>
 
+  <!-- OUR STORY -->
+  <section>
+    <h2>Our Story</h2>
+    <div style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap;">
+      <div style="flex: 0 0 150px; text-align: center;">
+        <img src="{{ '/assets/images/benjamin-portrait.jpg' | relative_url }}" alt="Benjamin" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #2471a3; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <p style="margin-top: 10px; font-weight: bold;">Benjamin</p>
+      </div>
+      <div style="flex: 1; min-width: 250px;">
+        <p>
+          <strong>OpenSeizureDetector was created for our son, Benjamin, who has epilepsy.</strong>
+        </p>
+        <p>
+          We wanted a way to know if he was having a seizure while he was at school or away from home, so we could get to him quickly if needed. Commercial seizure detectors were too expensive and required subscriptions.
+        </p>
+        <p>
+          Over a decade of development, we've created a system that works reliably, costs almost nothing, and is completely open source so anyone can use, modify, or improve it.
+        </p>
+        <p>
+          Today, families worldwide use OpenSeizureDetector to keep their loved ones safe.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr/>
+
+  <!-- KEY BENEFITS -->
+  <section>
+    <h2>Why Choose OpenSeizureDetector?</h2>
+    <div class="audiences">
+      <div class="card">
+        <h4>💰 Ultra Affordable</h4>
+        <p>Complete system from £35 - no expensive medical device markup. See why in our <a href="{{ '/pages-user/faq.html' | relative_url }}#affordable">FAQ</a>.</p>
+      </div>
+      <div class="card">
+        <h4>🔓 Completely Open Source</h4>
+        <p>View the code, modify it, audit it - full transparency and control. <a href="https://github.com/OpenSeizureDetector">Browse source on GitHub</a>.</p>
+      </div>
+      <div class="card">
+        <h4>⚡ Works Offline</h4>
+        <p>No internet needed, no cloud servers, no tracking - just local alerts via WiFi or SMS.</p>
+      </div>
+      <div class="card">
+        <h4>🏥 Evidence-Based</h4>
+        <p>81% detection rate for tonic-clonic seizures based on real user data. <a href="{{ '/pages-user/faq.html' | relative_url }}#does-it-work">Learn more</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr/>
+
   <!-- NEWS -->
   <section>
-    <h2>Latest News</h2>
+    <h2>Latest News & Updates</h2>
     <ul id="news-list">
       <li>Loading updates…</li>
     </ul>
-    <p><a href="/news/">View all news</a></p>
+    <p style="margin-top: 15px;"><a href="{{ '/news/' | relative_url }}">View all news and announcements →</a></p>
   </section>
 
   <hr/>

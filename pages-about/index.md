@@ -24,4 +24,22 @@ cards:
     links:
       - text: Project information
         url: https://openseizuredetector.org.uk
+
+  - title: Privacy
+    description: How we handle your data
+    links:
+      - text: Privacy Policy
+        url: /pages-about/privacy-policy.html
+
+  - title: Getting Involved
+    description: Contribute to the project
+    links:
+      - text: How to Help
+        url: /pages-about/getting-involved.html
+
+  - title: Similar Projects
+    description: Other seizure detection systems
+    links:
+      - text: Other Projects
+        url: /pages-about/similar-projects.html
 ---

@@ -16,6 +16,8 @@ cards:
   - title: System Architecture
     description: Overview of how the system components interact.
     links:
+      - text: System Components
+        url: /pages-developer/components.html
       - text: Project Overview
         url: /pages-about/
 

@@ -1,0 +1,62 @@
+================================================================================
+EVENT ANALYSIS REPORT
+================================================================================
+
+USER ANALYSIS
+--------------------------------------------------------------------------------
+TPR by User:
+ User  Seizures  TP  FN      TPR
+   39        24  21   3 0.875000
+  733         6   5   1 0.833333
+Other        10   8   2 0.800000
+   45         4   3   1 0.750000
+
+FAR (False Alarm Rate) by User:
+ User  NonSeizures  FP   TN      FAR
+  697          121  31   90 0.256198
+  733          118  28   90 0.237288
+Other          805 147  658 0.182609
+  837          173  29  144 0.167630
+   39         1383 228 1155 0.164859
+ 1422          327  28  299 0.085627
+   38          406  23  383 0.056650
+  831          144   8  136 0.055556
+
+
+SEIZURE TYPE ANALYSIS
+--------------------------------------------------------------------------------
+TPR by Seizure SubType:
+     SubType  Count  TP  FN      TPR
+Tonic-Clonic     22  20   2 0.909091
+       Other     21  16   5 0.761905
+
+
+TONIC-CLONIC SEIZURES ANALYSIS
+--------------------------------------------------------------------------------
+TPR Statistics for Tonic-Clonic Seizures Only:
+  Count: 22
+  True Positives: 20
+  False Negatives: 2
+  Total Seizures: 22
+  TPR (Sensitivity): 0.909
+  FPR (False Positive Rate): 0.150
+
+
+FALSE ALARM ANALYSIS
+--------------------------------------------------------------------------------
+FAR by SubType:
+                         SubType  Count  FP   TN      FAR
+                         Sorting     11   9    2 0.818182
+                         Talking      9   7    2 0.777778
+                   Motor Vehicle     26  18    8 0.692308
+                          Typing      7   4    3 0.571429
+Other (Please describe in notes)     35  18   17 0.514286
+                  Computer Games      8   2    6 0.250000
+             Brushing Hair/Teeth     18   4   14 0.222222
+                Sorting/Knitting      9   2    7 0.222222
+        Cooking/Washing/Cleaning     23   5   18 0.217391
+                           Other    148  27  121 0.182432
+         Walking/Running/Cycling     28   5   23 0.178571
+                         Unknown   3115 417 2698 0.133868
+          Talking/Standing Still     25   3   22 0.120000
+               Typing/Hand Tools     15   1   14 0.066667

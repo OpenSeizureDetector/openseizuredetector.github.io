@@ -21,11 +21,33 @@ cards:
       - text: Seizure Detection Algorithms
         url: /pages-user/seizure-detection/
 
+  - title: Data Sharing
+    description: Contribute your data to improve the system.
+    links:
+      - text: Data Sharing Guide
+        url: /pages-user/data-sharing/index.html
 
+  - title: FAQ
+    description: Answers to common questions
+    links:
+      - text: Frequently Asked Questions
+        url: /pages-user/faq.html
+
+  - title: SMS Alerts
+    description: Alert carers via text message
+    links:
+      - text: SMS Annunciator Setup
+        url: /pages-user/sms-annunciator.html
 
   - title: Troubleshooting
     description: Solve common problems and issues.
     links:
       - text: Troubleshooting
-        url: https://openseizuredetector.org.uk/?page_id=1894
+        url: /pages-user/troubleshooting.html
+
+  - title: Privacy
+    description: Understand how your data is handled
+    links:
+      - text: Privacy Policy
+        url: /pages-about/privacy-policy.html
 ---
