@@ -10,9 +10,9 @@ layout: default
     <p class="hero-tagline">Free, open source tools to detect tonic-clonic seizures and alert carers instantly.</p>
 
     <div class="hero-features">
+      <a href="{{ '/pages-user/faq.html' | relative_url }}#does-it-work" class="feature-badge" title="Click to see reliability data">⚡ Reliable</a>
       <a href="{{ '/pages-user/faq.html' | relative_url }}#affordable" class="feature-badge" title="Click to learn why it's so affordable">💰 Affordable</a>
       <a href="{{ '/pages-user/faq.html' | relative_url }}#open-source" class="feature-badge" title="Click to learn why open source matters">🔓 Open Source</a>
-      <a href="{{ '/pages-user/faq.html' | relative_url }}#does-it-work" class="feature-badge" title="Click to see reliability data">⚡ Reliable</a>
       <a href="{{ '/pages-about/privacy-policy.html' | relative_url }}" class="feature-badge" title="Click to read our privacy policy">🔒 Private</a>
     </div>
 
@@ -23,6 +23,45 @@ layout: default
   </section>
 
   <hr/>
+
+  <!-- OUR STORY -->
+  <section>
+    <h2>Our Story</h2>
+    <div style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap;">
+      <div style="flex: 0 0 150px; text-align: center;">
+        <img src="{{ '/assets/images/benjamin-portrait-2025.jpg' | relative_url }}" alt="Benjamin" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #2471a3; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <p style="margin-top: 10px; font-weight: bold;">Benjamin</p>
+      </div>
+      <div style="flex: 1; min-width: 250px;">
+        <p>
+          <strong>OpenSeizureDetector was created for our son, Benjamin, who has epilepsy.</strong>
+        </p>
+        <p>
+          We wanted a way to monitor him while he was alone in his room so we could care for him if he had a seizure, without one of us having to stay with him all the time.    
+        </p>
+          We originally used a video monitor which was good to reassure us that he was ok, but relied on one of us looking at it or hearing an unusual sound to detect a seizure.
+          We really wanted something to go 'beep' to alert us if he was having a seizure, so we could get to him quickly if needed, 
+        </p>
+        <p>
+          There were very few commercial seizure detectors available when we started, and they tended to rely on bed sensors...and Benjamin was refusing to sleep in a bed at that point,
+          so I set about making one myself... which eventually turned into OpenSeizureDetector.
+        </p>
+        <p>
+          Over a decade later we have a seizure detection and alert system that will run on very low cost hardware (low end smartphone and a £35 watch), and which detects tonic clonic seizures reliably.  
+          It is completely open source so anyone can use, modify, or improve it.
+        </p>
+        <p>
+          Today there are users of OpenSeizureDetector all over the world.
+        </p>
+        <p>
+          We are continuing to improve OpenSeizureDetector, with developers helping with improvements, and users contributing data to help imporove the detection algorithms.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr/>
+
 
   <!-- WHAT IT IS -->
   <section>
@@ -41,11 +80,51 @@ layout: default
       No subscriptions, or internet connection required. It is fully configurable by the user.
     </p>
 
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-around; margin: 30px 0; align-items: center;">
+      <div style="flex: 1; min-width: 150px; text-align: center;">
+        <div style="font-size: 2.5em; margin-bottom: 10px;">⌚</div>
+        <strong>Monitor</strong>
+        <p style="font-size: 0.9em;">Smartwatch measures movement & heart rate</p>
+      </div>
+      <div style="font-size: 2em; flex-shrink: 0; color: #2471a3;">→</div>
+      <div style="flex: 1; min-width: 150px; text-align: center;">
+        <div style="font-size: 2.5em; margin-bottom: 10px;">📱</div>
+        <strong>Analyze</strong>
+        <p style="font-size: 0.9em;">Android phone processes the data</p>
+      </div>
+      <div style="font-size: 2em; flex-shrink: 0; color: #2471a3;">→</div>
+      <div style="flex: 1; min-width: 150px; text-align: center;">
+        <div style="font-size: 2.5em; margin-bottom: 10px;">🔔</div>
+        <strong>Alert</strong>
+        <p style="font-size: 0.9em;">Carers notified via SMS or WiFi</p>
+      </div>
+    </div>
+
+    <h2>Why Choose OpenSeizureDetector?</h2>
+    <div class="audiences">
+      <div class="card">
+        <h4>💰 Ultra Affordable</h4>
+        <p>Complete system from £35 - no expensive medical device markup. See why in our <a href="{{ '/pages-user/faq.html' | relative_url }}#affordable">FAQ</a>.</p>
+      </div>
+      <div class="card">
+        <h4>🔓 Completely Open Source</h4>
+        <p>View the code, modify it, audit it - full transparency and control. <a href="https://github.com/OpenSeizureDetector">Browse source on GitHub</a>.</p>
+      </div>
+      <div class="card">
+        <h4>⚡ Works Offline</h4>
+        <p>No internet needed, no cloud servers, no tracking - just local alerts via WiFi or SMS.</p>
+      </div>
+      <div class="card">
+        <h4>🏥 Evidence-Based</h4>
+        <p>81% detection rate for tonic-clonic seizures based on real user data. <a href="{{ '/pages-user/faq.html' | relative_url }}#does-it-work">Learn more</a>.</p>
+      </div>
+    </div>
     <div style="margin-top: 20px; padding: 15px; background: #f0f4f8; border-left: 4px solid #2471a3; border-radius: 4px; clear: both;">
-      <strong>✓ ~81% seizure detection rate</strong> | 
-      <strong>✓ Local alerts via WiFi or SMS</strong> | 
+      <strong>✓ >80% seizure detection reliability</strong> | 
+      <strong>✓ Alerts via WiFi or SMS</strong> | 
       <strong>✓ Continuous self-testing</strong>
     </div>
+
   </section>
 
   <hr/>
@@ -87,88 +166,7 @@ layout: default
 
   <hr/>
 
-  <!-- HOW IT WORKS -->
-  <section>
-    <h2>How It Works</h2>
-    <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-around; margin: 30px 0; align-items: center;">
-      <div style="flex: 1; min-width: 150px; text-align: center;">
-        <div style="font-size: 2.5em; margin-bottom: 10px;">⌚</div>
-        <strong>Monitor</strong>
-        <p style="font-size: 0.9em;">Smartwatch measures movement & heart rate</p>
-      </div>
-      <div style="font-size: 2em; flex-shrink: 0; color: #2471a3;">→</div>
-      <div style="flex: 1; min-width: 150px; text-align: center;">
-        <div style="font-size: 2.5em; margin-bottom: 10px;">📱</div>
-        <strong>Analyze</strong>
-        <p style="font-size: 0.9em;">Android phone processes the data</p>
-      </div>
-      <div style="font-size: 2em; flex-shrink: 0; color: #2471a3;">→</div>
-      <div style="flex: 1; min-width: 150px; text-align: center;">
-        <div style="font-size: 2.5em; margin-bottom: 10px;">🔔</div>
-        <strong>Alert</strong>
-        <p style="font-size: 0.9em;">Carers notified via SMS or WiFi</p>
-      </div>
-    </div>
-    <ol style="margin-top: 20px;">
-      <li>Smartwatch continuously monitors acceleration and heart rate</li>
-      <li>Android phone analyses this data</li>
-      <li>An alert is raised if patterns suggest a seizure</li>
-    </ol>
-  </section>
 
-  <hr/>
-
-  <!-- OUR STORY -->
-  <section>
-    <h2>Our Story</h2>
-    <div style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap;">
-      <div style="flex: 0 0 150px; text-align: center;">
-        <img src="{{ '/assets/images/benjamin-portrait.jpg' | relative_url }}" alt="Benjamin" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #2471a3; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <p style="margin-top: 10px; font-weight: bold;">Benjamin</p>
-      </div>
-      <div style="flex: 1; min-width: 250px;">
-        <p>
-          <strong>OpenSeizureDetector was created for our son, Benjamin, who has epilepsy.</strong>
-        </p>
-        <p>
-          We wanted a way to know if he was having a seizure while he was at school or away from home, so we could get to him quickly if needed. Commercial seizure detectors were too expensive and required subscriptions.
-        </p>
-        <p>
-          Over a decade of development, we've created a system that works reliably, costs almost nothing, and is completely open source so anyone can use, modify, or improve it.
-        </p>
-        <p>
-          Today, families worldwide use OpenSeizureDetector to keep their loved ones safe.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <hr/>
-
-  <!-- KEY BENEFITS -->
-  <section>
-    <h2>Why Choose OpenSeizureDetector?</h2>
-    <div class="audiences">
-      <div class="card">
-        <h4>💰 Ultra Affordable</h4>
-        <p>Complete system from £35 - no expensive medical device markup. See why in our <a href="{{ '/pages-user/faq.html' | relative_url }}#affordable">FAQ</a>.</p>
-      </div>
-      <div class="card">
-        <h4>🔓 Completely Open Source</h4>
-        <p>View the code, modify it, audit it - full transparency and control. <a href="https://github.com/OpenSeizureDetector">Browse source on GitHub</a>.</p>
-      </div>
-      <div class="card">
-        <h4>⚡ Works Offline</h4>
-        <p>No internet needed, no cloud servers, no tracking - just local alerts via WiFi or SMS.</p>
-      </div>
-      <div class="card">
-        <h4>🏥 Evidence-Based</h4>
-        <p>81% detection rate for tonic-clonic seizures based on real user data. <a href="{{ '/pages-user/faq.html' | relative_url }}#does-it-work">Learn more</a>.</p>
-      </div>
-    </div>
-  </section>
-
-  <hr/>
 
   <!-- NEWS -->
   <section>

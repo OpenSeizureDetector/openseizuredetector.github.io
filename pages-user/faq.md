@@ -38,6 +38,8 @@ Yes. In June 2022 we introduced the [Data Sharing](/pages-user/data-sharing/inde
 - OpenSeizureDetector has a real-world [detection reliability of about 81% for tonic-clonic seizures](./PineTime_Performance_Report.pdf), based on our experience testing the PineTime watch before releasing it for users.
 - Has a detection reliability of about 75% for all seizures.
 
+The biggest issue users find with OpenSeizureDetector is not it failing to detect tonic-clonic seizures, but false alarms.   We find the false alarm rate for night time use to be acceptable (we get one or 2 per day), but some activities such as brushing teeth or using hand tools will set it off.
+
 The Machine Learning (Artificial Intelligence) seizure detection algorithm which the recommended seizure detection algorithm for OpenSeizureDetector V5 onwards, is showing even better performance with less false alarms.
 
 Note though that it has not been subjected to formal clinical trials and the [Open Source License](https://github.com/OpenSeizureDetector/Android_Pebble_SD/blob/master/LICENCE.txt) for OpenSeizureDetector states that as free software, it does not come with any warranty.
