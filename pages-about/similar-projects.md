@@ -3,44 +3,172 @@ layout: page
 title: Similar Projects
 ---
 
-There are several other projects with similar goals to OpenSeizureDetector. The table below provides links to project web pages, user feedback where available, and information on how they work and their approximate costs.
-Note that the cost does not include a smartphone to use with it - I assume that most people will have a smartphone that they will use.
+There are several other projects with similar goals to OpenSeizureDetector.   I have tried to give a comparison of the ones I know about below.
 
-If you notice any errors or have suggestions for other projects to include, please email [graham@openseizuredetector.org.uk](mailto:graham@openseizuredetector.org.uk).
+I am happy to receive suggestions for others to add or corrections if I have got something wrong.
+
+Please contact graham@openseizuredetector.org.uk if you think anything needs to be changed, or if you have a better reference for the performance of a device.
+
+**Notes:**
+- *Fault Detection* indicates whether the system detects device/link/alert failures to warn the user of problems rather than failing silently if it is not working.
+- *Internet Dependency* distinguishes internet requirements for detection vs alerting purposes.
+- Performance metrics are **not directly comparable** due to differing study designs and populations, but I have tried to quote published data where available.
+- The table below is quite wide - there is a scroll bar at the bottom of the table to allow you to view the additional columns.
+
+---
+
+<div style="overflow-x: auto; width: 100%;">
+
+<table>
+<tr>
+<th>Project</th>
+<th>Hardware</th>
+<th>Detection Method</th>
+<th>Evidence</th>
+<th>Fault Detection</th>
+<th>Internet Dependency</th>
+<th>Alerting</th>
+<th>Cost (3yr)</th>
+<th>Sensitivity (Tonic-Clonic Seizures)</th>
+<th>False Alarm Rate</th>
+<th>Study Context</th>
+</tr>
+
+<tr>
+<td><b><a href="https://openseizuredetector.org.uk">Open Seizure Detector</a></b></td>
+<td><a href="https://pine64.com/product/pinetime-smartwatch-sealed/">PineTime</a> / Garmin</td>
+<td>Motion (frequency analysis and  Machine Learning (CNN)), HR Thresholds</td>
+<td>Open source</td>
+<td>Yes (watch ↔ phone monitoring)</td>
+<td>None</td>
+<td>Local alarm, SMS, WiFi</td>
+<td>£35–£153 (no subscription)</td>
+<td>~80% [6]</td>
+<td>~1-2 per day for night time use [6]</td>
+<td>Real-world usage</td>
+</tr>
+
+<tr>
+<td><b><a href="https://www.empatica.com/epimonitor">Empatica EpiMonitor</a></b></td>
+<td>EmbracePlus</td>
+<td>ML (ACC + EDA)</td>
+<td>Peer-reviewed [1]</td>
+<td>Partial (cloud-dependent)</td>
+<td>Required</td>
+<td>SMS / call</td>
+<td>~£728 (≈£299 + £143/yr)</td>
+<td>~95% [1]</td>
+<td>~0.25/day [1]</td>
+<td>Multicentre clinical study</td>
+</tr>
+
+<tr>
+<td><b><a href="https://www.seizalarm.com/">SeizAlarm</a></b></td>
+<td>Apple Watch</td>
+<td>Motion + HR thresholds [2]</td>
+<td>Vendor</td>
+<td>Unknown</td>
+<td>Optional</td>
+<td>Call, SMS, email</td>
+<td>~£592 (≈£187 + £135/yr)</td>
+<td>Not published</td>
+<td>Not published</td>
+<td>–</td>
+</tr>
+
+<tr>
+<td><a href="https://smart-monitor.com/inspyre/">SmartMonitor Inspyre</a></td>
+<td>Apple / Samsung</td>
+<td>Rhythmic motion detection [3]</td>
+<td>Published studies [3]</td>
+<td>Partial</td>
+<td>Optional</td>
+<td>App, SMS, call</td>
+<td>~£457 (≈£187 + £7.50/mo)</td>
+<td>High (~100% small studies) [3]</td>
+<td>Specificity >90% [3]</td>
+<td>Small clinical studies</td>
+</tr>
+
+<tr>
+<td><b><a href="https://www.nightwatch.care/">NightWatch+</a></b></td>
+<td>Armband + base</td>
+<td>ACC + PPG + posture filtering [5]</td>
+<td>Peer-reviewed [5]</td>
+<td>Partial</td>
+<td>None</td>
+<td>Local alarm</td>
+<td>~£1,208 (no subscription)</td>
+<td>~86% median [5]</td>
+<td>Varies; see [5]</td>
+<td>Prospective home study</td>
+</tr>
+
+<tr>
+<td><b><a href="https://www.epilepsygroup.com/notes6-35-203/the-brain-sentinel-detecting-seizures-anywhere-and-anyt.htm">Brain Sentinel SPEAC</a></b></td>
+<td>Arm EMG</td>
+<td>sEMG muscle activity</td>
+<td>Clinical / FDA-cleared</td>
+<td>Unknown</td>
+<td>Unknown</td>
+<td>Caregiver alert</td>
+<td>~£800+ (subscription unclear)</td>
+<td>100% agreement [4]</td>
+<td>~1.4/day [4]</td>
+<td>Multicentre clinical</td>
+</tr>
+
+<tr>
+<td><b><a href="https://www.epihunter.com/product">EpiHunter</a></b></td>
+<td>EEG headband</td>
+<td>EEG-based detection</td>
+<td>Vendor + clinical</td>
+<td>Unknown</td>
+<td>Required (app/cloud)</td>
+<td>App alerts</td>
+<td>~£2,000+ (≈£59/mo subscription)</td>
+<td>>90% (absence seizures) [7]</td>
+<td>Not reported</td>
+<td>Clinical + real-world</td>
+</tr>
+
+</table>
+
+</div>
+
+---
+
+## Key Observations
 
 
-| Project | Watch / Hardware | Detection Method | Alerting | Comms Monitoring | Watch / Hardware Cost | Subscription | 3-Year Cost |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [**Open Seizure Detector**](https://openseizuredetector.org.uk) | [PineTime](https://pine64.com/product/pinetime-smartwatch-sealed/) | **Deterministic** (ACC frequency analysis & period-matching) or **Machine Learning** (CNN Trained on user-provided data) | Local Alarm, WiFi, SMS | Yes | £35 | £0 | £35 |
-| [**Open Seizure Detector**](https://openseizuredetector.org.uk) | Garmin (e.g. Vivoactive 5) | **Deterministic** (ACC frequency + PPG heart rate thresholding) | Local Alarm, WiFi, SMS | Yes | £153 | £0 | £153 |
-| **[Empatica EpiMonitor](https://www.empatica.com/epimonitor)** | EmbracePlus (Proprietary) | **Machine Learning** (Supervised Support Vector Machine Classifier) [[1]](https://onlinelibrary.wiley.com/doi/10.1111/epi.13681) | Phone Call, SMS (via internet) | Yes | ~£299 | From ~£13/mo (or £143/yr) | ~£728 (w/ annual plans) |
-| **[SeizAlarm](https://www.seizalarm.com/)** | Apple Watch | **Deterministic** (User-defined thresholds for motion & heart rate) [[2]](https://www.seizalarm.com/false-alarm-reduction-tips) | Phone Call, SMS, Email (via internet) | Unknown | ~£187+ (Watch) | ~£13.50/mo (or £135/yr) | ~£592 (w/ annual plans) |
-| **[SmartMonitor Inspyre](https://www.smart-monitor.com/inspyre/)** | Samsung or Apple Watch | **Deterministic** (Sustained rhythmic shaking frequency analysis) [[3]](https://www.tenovi.com/wearable-devices-for-epilepsy/) | App Notification, Call, Text | Yes | ~£187+ (Watch) | From ~£7.50/mo | ~£457 |
-| **[Epipal](https://epipalapp.com/)** | Apple Watch or Wear OS | **Deterministic Heuristic** (Calculates movement/HR statistical deviations) [[4]](https://esebc.ca/seizure-alert-devices/) | App Notification, Emergency SMS & Location | Yes | ~£187+ (Watch) | Free basic / ~£7.50/mo Premium | ~£187 (Free) - ~£457 (Premium) |
-| **[NightWatch+](https://www.nightwatch.care/)** | Armband & Base Station | **Deterministic Heuristic** (Multimodal ACC + PPG filtered by sleep position) [[5]](https://pmc.ncbi.nlm.nih.gov/articles/PMC13006280/) | Local Audio/Visual Base Station | Yes | ~£1,208 | £0 | ~£1,208 |
-| **[Pulse Companion](https://epilepsysolutions.co.uk/pulse-companion)** | Armband & Care Pager | **Deterministic** (Real-time optical PPG tachycardia / bradycardia thresholds) | Local Pager (up to 450m range) | Yes | ~£675 | £0 | ~£675 |
-| **[SAMI](https://samialert.com/)** | Video Camera | **Deterministic** (Computer vision pixel variance / infrared motion analysis) [[4]](https://esebc.ca/seizure-alert-devices/) | WiFi App Alert | Unknown | ~£373 | £0 | ~£373 |
-| **[Emfit QS](https://www.emfit.com/emfit-qs-for-care)** | Bed Sensor | **Deterministic** (Ballistocardiography/pressure variation analysis) | Local Audible Alarm | Unknown | ~£224 | £0 | ~£224 |
+- **Subscription models dominate commercial offerings**, often exceeding hardware cost over time.
 
-<p style="font-size: 0.85em; color: #555; line-height: 1.5;">
-<strong>*Note on Currency Conversions:</strong> For international projects priced outside of the UK, conversions are approximated using current benchmark exchange rates of 1 USD = £0.75 and 1 EUR = £0.864. Local hardware pricing configurations (like the Apple Watch SE) are based on entry-level models.<br><br>
-<strong>References & Algorithm Technical Notes:</strong><br>
-<strong><a href="https://onlinelibrary.wiley.com/doi/10.1111/epi.13681">[1] Empatica Production Methodology (Onorati et al.):</a></strong> The real-time, FDA-cleared production detection framework relies on a classical supervised Machine Learning pipeline. The device extracts 29 specific time- and frequency-domain features from a 3-axis accelerometer (detecting rhythmic clonus) and electrodermal activity (EDA, tracking sympathetic arousal surges). These features are evaluated by an optimized linear Support Vector Machine (SVM) decision boundary to trigger an alert while filtering out non-seizure daily movements.<br>
-<strong><a href="https://www.seizalarm.com/false-alarm-reduction-tips">[2] SeizAlarm Technical Execution:</a></strong> Runs an app-layer threshold monitoring system utilizing Apple's CoreMotion and HealthKit API frameworks. The application analyzes raw accelerometer data for sudden motion intensity spikes alongside a moving heart rate baseline, cross-checking if values breach user-configured absolute limits for a designated duration.<br>
-<strong><a href="https://www.tenovi.com/wearable-devices-for-epilepsy/">[3] SmartMonitor Inspyre:</a></strong> Utilizes frequency-domain analysis of the triaxial accelerometer signal, specifically matching rhythmic oscillations between 3 to 8 Hz common to convulsive activity, using customized software filters to reduce false positives.<br>
-<strong><a href="https://esebc.ca/seizure-alert-devices/">[4] App-Based Integration Ecosystems (ESEBC Directory):</a></strong> General comparative performance tracking for alternative direct app-to-watch installations like SAMI and Epipal, mapping movement/HR deviations against standard consumer-grade wearable sensors.<br>
-<strong><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13006280/">[5] NightWatch+ Clinical Guidance:</a></strong> Uses a multi-sensor rule heuristic. Alerts trigger based on sudden heart rate variance or mechanical shaking, run through an algorithmic filter that checks the physical layout angle of the armband so that it only active-triggers when the user is horizontal (sleeping), reducing awake false alarms by roughly 70%.
-</p>
-Another good list comparing devices can be found on the [esebc.ca web site](https://esebc.ca/seizure-alert-devices)
+- **Fault detection remains poorly specified** across nearly all commercial systems.
 
+- **Internet dependence is often understated** Internet connectivity is required for many of the devices to deliver alerts - this could be an issue if it is to be used in a remote area.
 
-### Discontinued or Inactive Projects
+---
 
-The following projects appear to be no longer available or have not been updated in a long time:
-*   Epilepsy Solutions Smart Watch
-*   Brio Watch
-*   Epdetect
-*   Pebble-based seizure detectors (Pebble watches are no longer produced)
-*   Michael Long's "Epilepsee" project
-*   Gerhard Mullenbeck's EpiAlarm
+## Important Note on Comparisons
 
+> Even where performance numbers are available, they are **not directly comparable** due to differences in:
+> - study design  
+> - patient population  
+> - seizure definitions  
+> - validation environments  
+
+We have tried to include available figures to give an indication of the likely performance comparison.
+
+---
+
+## References
+
+[1] [Empatica seizure detection study (Epilepsia)](https://onlinelibrary.wiley.com/doi/10.1111/epi.13681) [1](https://www.sciencedaily.com/releases/2017/10/171031084830.htm)  
+[2] [SeizAlarm documentation](https://www.seizalarm.com/false-alarm-reduction-tips)  
+[3] [SmartMonitor study summary](https://epilepsysolutions.co.uk/inspyre-faqs)   
+[4] [Brain Sentinel Summary](https://www.prweb.com/releases/brain_sentinel_s_speac_system_demonstrates_equivalence_in_sensitivity_to_detect_generalized_tonic_clonic_seizures_to_video_eeg/prweb14746451.htm)  
+[5] [NightWatch study (Neurology)](https://nightwatchepilepsy.com/wp-content/uploads/2022/03/Neurology_NightWatch_Multimodal-nocturnal-seizure-detection-in-a-residential-care-setting.pdf)  
+[6] [Analysis of OpenSeizureDetector using user-reported data](https://github.com/OpenSeizureDetector/Android_Pebble_SD/issues/240#issuecomment-4668560405) - a better reference to follow...
+[7] [EpiHunter performance summary](https://www.epilepsysparks.com/epihunter)  
+
+---
