@@ -132,6 +132,20 @@ Please contact graham@openseizuredetector.org.uk if you think anything needs to 
 <td>Clinical + real-world</td>
 </tr>
 
+<tr>
+<td><b><a href="https://owletbabycare.co.uk/products/dream-sock-pulse-oximeter-pediatric">Owlet</a></b></td>
+<td>Custom Sock Sensor</td>
+<td>PPG Pulse/O2 Sat. Thresholds</td>
+<td>Unknown</td>
+<td>Unknown</td>
+<td>Optional [8]</td>
+<td>Local Alarm, App Alerts [8]</td>
+<td>£300 (no subscription)</td>
+<td>Unknown</td>
+<td>Unknown</td>
+<td>Unknown</td>
+</tr>
+
 </table>
 
 </div>
@@ -164,11 +178,58 @@ We have tried to include available figures to give an indication of the likely p
 ## References
 
 [1] [Empatica seizure detection study (Epilepsia)](https://onlinelibrary.wiley.com/doi/10.1111/epi.13681) [1](https://www.sciencedaily.com/releases/2017/10/171031084830.htm)  
+
 [2] [SeizAlarm documentation](https://www.seizalarm.com/false-alarm-reduction-tips)  
+
 [3] [SmartMonitor study summary](https://epilepsysolutions.co.uk/inspyre-faqs)   
+
 [4] [Brain Sentinel Summary](https://www.prweb.com/releases/brain_sentinel_s_speac_system_demonstrates_equivalence_in_sensitivity_to_detect_generalized_tonic_clonic_seizures_to_video_eeg/prweb14746451.htm)  
+
 [5] [NightWatch study (Neurology)](https://nightwatchepilepsy.com/wp-content/uploads/2022/03/Neurology_NightWatch_Multimodal-nocturnal-seizure-detection-in-a-residential-care-setting.pdf)  
-[6] [Analysis of OpenSeizureDetector using user-reported data](https://github.com/OpenSeizureDetector/Android_Pebble_SD/issues/240#issuecomment-4668560405) - a better reference to follow...
+
+[6] [Analysis of OpenSeizureDetector using user-reported data](https://github.com/OpenSeizureDetector/Android_Pebble_SD/issues/240#issuecomment-4668560405) - a better reference to follow.
+
 [7] [EpiHunter performance summary](https://www.epilepsysparks.com/epihunter)  
 
+[8] [Owlet User Manual](https://cdn.shopify.com/s/files/1/0050/6508/0945/files/Dream_Sock_User_Manual.pdf?v=1741191796)
+
+
+
+## Other Projects that are No Longer Active
+
+<div style="overflow-x: auto; width: 100%;">
+
+<table>
+<tr>
+<th>Project</th>
+<th>Hardware</th>
+<th>Notes</th>
+</tr>
+
+<tr>
+<td><b><a href="https://neutun.com">Neutun</a></b></td>
+<td>Pebble Watch</td>
+<td>App no longer available, and <a href="https://www.crunchbase.com/organization/neutun-labs">company not active.</a> (acquired by doc.ai?)</td>
+</tr>
+<tr>
+<td><b><a href="">Brio</a></b></td>
+<td>Heart Rate Sensor & Alarm</td>
+<td>No Longer Available</td>
+</tr>
+<tr>
+<td><b><a href="https://getmellow.app">Mellow</a></b></td>
+<td>Apple Watch</td>
+<td>App no longer available, and <a href="https://tracxn.com/d/companies/mellow/__kzPs7ncK0kM8wfwVJw4-_mrAN4xUvg83WEp-QDUOlfQ#funding-and-investors">company not active.</a></td>
+</tr>
+
+<tr>
+<td><b><a href="https://github.com/PebbleSeizureDetect/PebbleSeizureDetect">PebbleSeizureDetect</a></b></td>
+<td>Pebble Watch</td>
+<td>Not actively maintained</td>
+</tr>
+
+</table>
+</div>
+
 ---
+
