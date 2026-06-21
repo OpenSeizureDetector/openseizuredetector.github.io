@@ -64,11 +64,39 @@
       mermaid.run();
     </script>
     <footer>
-    {% if site.github.is_project_page %}
-      <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-    {% endif %}
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+      <!-- Newsletter Signup Footer -->
+      <div style="background-color: #f5f5f5; padding: 30px; border-top: 1px solid #ddd; margin: 40px 0 0 0;">
+        <div style="max-width: 800px; margin: 0 auto;">
+          <div style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap; margin-bottom: 20px;">
+            <div style="flex: 1; min-width: 250px;">
+              <h4 style="margin-top: 0; color: #333;">📧 Get Updates</h4>
+              <p style="font-size: 0.9em; color: #666; margin: 0;">
+                Subscribe to our mailing list for news and announcements.
+              </p>
+            </div>
+            <form action="https://www.openseizuredetector.org.uk/#es_form_f1-n1" method="post" class="es_subscription_form es_shortcode_form  es_ajax_subscription_form" id="es_subscription_form_6a3575c7a6704_footer" data-source="ig-es" data-form-id="1" style="display: flex; gap: 8px; flex-wrap: wrap; min-width: 250px;">
+              <div style="display:none;">&nbsp;</div>
+              <div class="es-field-wrap"><label><input type="text" name="esfpx_name" class="ig_es_form_field_name es-form-input" placeholder="Enter your name" value=""></label></div>
+              <div class="es-field-wrap ig-es-form-field"><label class="es-field-label"><input class="es_required_field es_txt_email ig_es_form_field_email ig-es-form-input es-form-input" type="email" name="esfpx_email" value="" placeholder="Enter your email" required="required"></label></div>
+              <input type="hidden" name="esfpx_lists[]" value="2d5665c22296">
+              <input type="hidden" name="esfpx_form_id" value="1">
+              <input type="hidden" name="es" value="subscribe">
+              <input type="hidden" name="esfpx_es_form_identifier" value="f1-n1">
+              <input type="hidden" name="esfpx_es_email_page" value="17">
+              <input type="hidden" name="esfpx_es_email_page_url" value="https://www.openseizuredetector.org.uk/">
+              <input type="hidden" name="esfpx_status" value="Unconfirmed">
+              <input type="hidden" name="esfpx_es-subscribe" id="es-subscribe-6a3575c7a6704_footer" value="7c73589861">
+              <label style="position:absolute;top:-99999px;left:-99999px;z-index:-99;" aria-hidden="true"><span hidden="">Please leave this field empty.</span><input type="email" name="esfpx_es_hp_email" class="es_required_field" tabindex="-1" autocomplete="-1" value=""></label>
+              <input type="submit" name="submit" class="es_subscription_form_submit es_submit_button es_textbox_button es-button--primary" id="es_subscription_form_submit_6a3575c7a6704_footer" value="Subscribe">
+            </form>
+            <div class="es_subscription_message"></div>
+          </div>
+          <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
+        </div>
+      </div>
+      
     </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+{% include es-subscribe-scripts.html %}
   </body>
 </html>

@@ -88,19 +88,21 @@ The app that would need to run on the Samsung watch would not need to be complic
 
 ### Can we reduce the number of False Alarms?
 
-Yes, but note that it will always be a trade off between reliability of detection of a real seizure and false alarm rate. The default settings are set to be quite sensitive to give users confidence that it will detect a real seizure. Increasing the Alarm Threshold value from the default 100 to around 800 will reduce the number of false alarms by inhibiting the seizure detection until there is more movement detected.
+Yes, but note that it will always be a trade off between reliability of detection of a real seizure and false alarm rate. 
 
-An analysis of the overnight false alarm rate for one particular user can be seen in our blog.
+The default settings for the original OSD algorithm are set to be quite sensitive to give users confidence that it will detect a real seizure. Increasing the Alarm Threshold value from the default 100 to around 800 will reduce the number of false alarms by inhibiting the seizure detection until there is more movement detected...but this does reduce the ability to detect seizures of the watch is trapped under the body so not moving very much.
 
 There are some activities that will always give seizure detected alarms though because they have movement similar to the movement we are trying to detect for a seizure (3-8Hz variation) – these include brushing teeth, touch typing and putting your arm on the bodywork of a moving car. There is a Mute function on the watch that you can use to prevent it alarming if you know you are about to do an activity that would raise an alarm.
 
-If false alarm rate is a serious issue for you, you might want to consider the [Empatica Embrace](https://empatica.com/) watch – this uses a machine learning seizure detection algorithm rather than the OpenSeizureDetector deterministic algorithm, so it should have a better false alarm rate – I do not know if this is actually the case or not though!
+From Version 5 of OpenSeizureDetector we have introduced the ability to download Machine Learning (ML) models (some would call them 'Artificial Intelligence' / 'AI').   We will train these models using data donated by users via our [Data Sharing](/pages-user/data-sharing/index.html) programme.
+The one which is being introduced with Version 5 does give reduced false alarms for some activities, but still alarms for others (such as riding in a vehicle or using hand tools).
 
-Note also that we are close to releasing a version of OpenSeizureDetector which uses a Machine Learning (Artificial Intelligence) algorithm which should give much better seizure detection performance and less false alarms.
+If false alarm rate is a serious issue for you, you might want to consider the [Empatica Embrace](https://empatica.com/) watch – this uses a machine learning seizure detection algorithm that is trained on a lot more data than we have available, so it should have a better false alarm rate – I do not know if this is actually the case or not though!
+
 
 ### How Can I Help?
 
-Please enable the new Data Sharing feature (in OpenSeizureDetector V4 and above) which will enable you to record data associated false alarms and genuine seizures – we will use this data to improve the detection algorithms to improve detection reliability and reduce false alarm rate.
+Please enable the [Data Sharing](/pages-user/data-sharing/index.html) feature which will enable you to record data associated false alarms and genuine seizures – we will use this data to improve the detection algorithms to improve detection reliability and reduce false alarm rate.
 
 There are two key areas that less technical users could help – Translations and Documentation.
 

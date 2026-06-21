@@ -100,23 +100,38 @@ layout: default
       </div>
     </div>
 
+    <h2>Screenshots of OpenSeizureDetector</h2>
+    <div>
+      <img src="{{ '/assets/images/OSD_PineTime.jpg' | relative_url }}" alt="PineTime watch running OpenSeizureDetector software (ok status)" style="max-width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); vertical-align: text-top;">
+      <img src="{{ '/assets/images/Basic_Mode_OK.jpg' | relative_url }}" alt="Screenshot of the OpenSeizureDetector app (ok status)" style="max-width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); vertical-align: text-top;">
+      <img src="{{ '/assets/images/Basic_Mode_ALARM.jpg' | relative_url }}" alt="Screenshot of the OpenSeizureDetector app (ALARM status)" style="max-width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); vertical-align: text-top;">
+      <img src="{{ '/assets/images/Advanced_Mode_ML_History.jpg' | relative_url }}" alt="Screenshot of the OpenSeizureDetector app advanced mode (ALARM status)" style="max-width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); vertical-align: text-top;">
+    </div>
+
+    <hr/>
     <h2>Why Choose OpenSeizureDetector?</h2>
     <div class="audiences">
       <div class="card">
-        <h4>💰 Ultra Affordable</h4>
-        <p>Complete system from £35 - no expensive medical device markup. See why in our <a href="{{ '/pages-user/faq.html' | relative_url }}#affordable">FAQ</a>.</p>
+        <h4>💰 Affordable</h4>
+        <p>A compatible watch costs from £35, and works with a basic Android phone. See more in our <a href="{{ '/pages-user/faq.html' | relative_url }}#affordable">FAQ</a>.</p>
       </div>
       <div class="card">
         <h4>🔓 Completely Open Source</h4>
         <p>View the code, modify it, audit it - full transparency and control. <a href="https://github.com/OpenSeizureDetector">Browse source on GitHub</a>.</p>
       </div>
       <div class="card">
-        <h4>⚡ Works Offline</h4>
-        <p>No internet needed, no cloud servers, no tracking - just local alerts via WiFi or SMS.</p>
+        <h4>⚡ Self Checking</h4>
+        <p>The system continuously monitors its own performance to ensure reliability by alerting the user to problems.   It will generate fault alerts if it does not receive data from the watch, the data does not arrive at the expected rate, heart rate not detected or low battery.</p>
+        <p>This ensures that the system will warn the user if it is not working rather than 'fail silently'.</p>
       </div>
       <div class="card">
         <h4>🏥 Evidence-Based</h4>
-        <p>81% detection rate for tonic-clonic seizures based on real user data. <a href="{{ '/pages-user/faq.html' | relative_url }}#does-it-work">Learn more</a>.</p>
+        <p>~80% detection rate for tonic-clonic seizures based on real user data. <a href="{{ '/pages-user/faq.html' | relative_url }}#does-it-work">Learn more</a>.</p>
+        <p>The main issue reported by users is the number of false alarms from repetitive movements during normal activities (brushing teeth, washing dishes etc.)</p>
+      </div>
+      <div class="card">
+        <h4>⚡ Works Offline</h4>
+        <p>No internet needed, no cloud servers, no tracking - just local alerts via WiFi or SMS.</p>
       </div>
     </div>
     <div style="margin-top: 20px; padding: 15px; background: #f0f4f8; border-left: 4px solid #2471a3; border-radius: 4px; clear: both;">
@@ -125,11 +140,21 @@ layout: default
       <strong>✓ Continuous self-testing</strong>
     </div>
 
+
+  <!-- DISCLAIMER -->
+    <p>
+      <strong>Important:</strong> This system is not a medical device and has not been
+      subjected to clinical trials. It is intended to support carers, not replace
+      professional monitoring.
+    </p>
+
+
   </section>
 
   <hr/>
 
   <!-- AUDIENCE ROUTING -->
+  <h2>Further Information</h2>
   <section class="audiences">
 
     <div class="card">
@@ -174,20 +199,43 @@ layout: default
     <ul id="news-list">
       <li>Loading updates…</li>
     </ul>
-    <p style="margin-top: 15px;"><a href="{{ '/news/' | relative_url }}">View all news and announcements →</a></p>
+    <p style="margin-top: 15px;"><a href="https://openseizuredetector.org.uk/news/">View all news and announcements →</a></p>
   </section>
 
   <hr/>
 
-  <!-- DISCLAIMER -->
-  <section class="disclaimer">
-    <p>
-      <strong>Important:</strong> This system is not a medical device and has not been
-      subjected to clinical trials. It is intended to support carers, not replace
-      professional monitoring.
+  <!-- STAY UPDATED -->
+  <section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 8px; text-align: center; margin: 20px 0;">
+    <h2 style="color: white; margin-top: 0;">Stay Updated</h2>
+    <p style="font-size: 1.1em; margin-bottom: 25px; color: rgba(255,255,255,0.95);">
+      Subscribe to our newsletter to receive the latest news, updates, and announcements about OpenSeizureDetector.
+    </p>
+    <form action="https://www.openseizuredetector.org.uk/#es_form_f1-n1" method="post" class="es_subscription_form es_shortcode_form es_ajax_subscription_form" id="es_subscription_form_6a3575c7a6704" data-source="ig-es" data-form-id="1" style="max-width: 700px; margin: 0 auto;">
+      <div class="es_caption">Receive updates about this site by email</div>
+      <div class="es-field-wrap"><label><input type="text" name="esfpx_name" class="ig_es_form_field_name es-form-input" placeholder="Enter your name" value=""></label></div>
+      <div class="es-field-wrap ig-es-form-field"><label class="es-field-label"><input class="es_required_field es_txt_email ig_es_form_field_email ig-es-form-input es-form-input" type="email" name="esfpx_email" value="" placeholder="Enter your email" required="required"></label></div>
+      <input type="hidden" name="esfpx_lists[]" value="2d5665c22296">
+      <input type="hidden" name="esfpx_form_id" value="1">
+      <input type="hidden" name="es" value="subscribe">
+      <input type="hidden" name="esfpx_es_form_identifier" value="f1-n1">
+      <input type="hidden" name="esfpx_es_email_page" value="17">
+      <input type="hidden" name="esfpx_es_email_page_url" value="https://www.openseizuredetector.org.uk/">
+      <input type="hidden" name="esfpx_status" value="Unconfirmed">
+      <input type="hidden" name="esfpx_es-subscribe" id="es-subscribe-6a3575c7a6704" value="7c73589861">
+      <label style="position:absolute;top:-99999px;left:-99999px;z-index:-99;" aria-hidden="true"><span hidden="">Please leave this field empty.</span><input type="email" name="esfpx_es_hp_email" class="es_required_field" tabindex="-1" autocomplete="-1" value=""></label>
+      <input type="submit" name="submit" class="es_subscription_form_submit es_submit_button es_textbox_button es-button--white" id="es_subscription_form_submit_6a3575c7a6704" value="Subscribe">
+      <span class="es_spinner_image" id="spinner-image" style="display:none;"><img src="https://www.openseizuredetector.org.uk/wp-content/plugins/email-subscribers/lite/public/images/spinner.gif" alt="Loading"></span>
+    </form>
+    <div class="es_subscription_message"></div>
+    <p style="font-size: 0.9em; margin-top: 15px; color: rgba(255,255,255,0.85);">
+      We respect your privacy. <a href="https://openseizuredetector.org.uk/privacy/" style="color: #fff; text-decoration: underline;">Read our privacy policy</a>.
     </p>
   </section>
+
+  <hr/>
+
 
 </div>
 
 <script src="{{ '/assets/js/wp-news.js' | relative_url }}"></script>
+{% include es-subscribe-scripts.html %}

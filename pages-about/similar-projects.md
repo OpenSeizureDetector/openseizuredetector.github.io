@@ -194,6 +194,25 @@ We have tried to include available figures to give an indication of the likely p
 [8] [Owlet User Manual](https://cdn.shopify.com/s/files/1/0050/6508/0945/files/Dream_Sock_User_Manual.pdf?v=1741191796)
 
 
+## Projects in Development
+<div style="overflow-x: auto; width: 100%;">
+
+<table>
+<tr>
+<th>Project</th>
+<th>Hardware</th>
+<th>Notes</th>
+</tr>
+
+<tr>
+<td><b><a href="https://www.ellowcare.com/">Ellow</a></b></td>
+<td>Custom Hardware (PPG sensor)</td>
+<td>Prototype stage.</td>
+</tr>
+
+</table>
+</div>
+
 
 ## Other Projects that are No Longer Active
 

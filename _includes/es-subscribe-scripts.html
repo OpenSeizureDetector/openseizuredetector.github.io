@@ -1,0 +1,58 @@
+<script>
+window.es_data = {
+  messages: {
+    es_empty_email_notice: "Please enter email address",
+    es_rate_limit_notice: "You need to wait for some time before subscribing again",
+    es_single_optin_success_message: "Successfully Subscribed.",
+    es_email_exists_notice: "Email Address already exists!",
+    es_unexpected_error_notice: "Oops.. Unexpected error occurred.",
+    es_invalid_email_notice: "Invalid email address",
+    es_try_later_notice: "Please try after some time"
+  },
+  es_ajax_url: 'https://www.openseizuredetector.org.uk/wp-admin/admin-ajax.php'
+};
+</script>
+<link rel="stylesheet" href="https://www.openseizuredetector.org.uk/wp-content/plugins/email-subscribers/lite/public/css/email-subscribers-public.css?ver=5.9.23">
+<style>
+  /* Comprehensive form layout for Email Subscribers forms */
+  .es_subscription_form { display:flex; gap:10px; align-items:center; flex-wrap:nowrap; width:100%; }
+  .es_subscription_form .es_caption { order: -1; width:100%; margin-bottom:6px; }
+  .es_subscription_form .es-field-wrap { flex:1 1 auto; min-width:0; display:flex; align-items:center; }
+  .es_subscription_form .es-field-wrap label { width:100%; }
+  .es_subscription_form .es-field-wrap input { box-sizing: border-box; width:100%; }
+  .es-form-input, .es_subscription_form input[type="text"],
+  .es_subscription_form input[type="email"],
+  .es_subscription_form .ig-es-form-input { height:40px; padding:8px 12px; border-radius:4px; border:1px solid #ccc; }
+  .es_subscription_form .es_submit_button,
+  .es_subscription_form input[type=submit] { height:40px; line-height:40px; flex:0 0 auto; min-width:110px; margin:0; display:inline-flex; align-items:center; justify-content:center; padding:0 14px; border-radius:4px; cursor:pointer; }
+  .es_subscription_form input[type=submit] { vertical-align:middle; }
+  .es_subscription_message { margin-top:12px; width:100%; clear:both; }
+
+  /* Compact layout for home form: name + email inline */
+  #es_subscription_form_6a3575c7a6704 { gap:8px; }
+  /* Make name and email take most of the width (approx 45% each) so inputs are larger */
+  #es_subscription_form_6a3575c7a6704 .es-field-wrap { flex:1 1 45%; min-width:180px; }
+  /* Footer form slightly wider fields */
+  #es_subscription_form_6a3575c7a6704_footer .es-field-wrap { flex:1 1 48%; min-width:180px; }
+
+  /* Ensure inputs scale and align, and buttons center vertically */
+  .es_subscription_form .es-field-wrap input, .es_subscription_form input[type=submit], .es_subscription_form .es_submit_button { box-sizing: border-box; }
+  .es_subscription_form .es-field-wrap input { height:44px; vertical-align:middle; }
+  .es_subscription_form input[type=submit], .es_subscription_form .es_submit_button { height:44px; line-height:44px; margin-top:0; }
+
+  /* Responsive: stack on small screens */
+  @media (max-width: 640px) {
+    .es_subscription_form { flex-wrap:wrap; }
+    .es_subscription_form .es-field-wrap { flex:1 1 100%; }
+    .es_subscription_form input[type=submit] { width:100%; }
+  }
+</style>
+<style>
+  /* Button variants */
+  .es-button--white { background:#fff; color:#667eea; border: none; }
+  .es-button--primary { background:#2471a3; color:#fff; border: none; }
+  .es-button--white:hover, .es-button--primary:hover { opacity:0.95; }
+</style>
+</style>
+<script src="https://www.openseizuredetector.org.uk/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script src="https://www.openseizuredetector.org.uk/wp-content/plugins/email-subscribers/lite/public/js/email-subscribers-public.js?ver=5.9.23"></script>
