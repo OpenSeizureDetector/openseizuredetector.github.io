@@ -756,18 +756,36 @@ footer {
 .faq-item {
   border: 1px solid #e6edf3;
   border-radius: 6px;
-  margin-bottom: 0.75rem;
+  margin: 0.75rem 0 1rem 0;
   overflow: hidden;
   background: #fff;
 }
 .faq-q {
   cursor: pointer;
-  padding: 12px 16px;
+  padding: 12px 16px 12px 40px;
   font-weight: 700;
   color: $osd-navy;
   list-style: none;
+  position: relative;
 }
-.faq-q::marker { display: none; }
+.faq-q::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid $osd-blue;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
 .faq-item[open] .faq-q { background: #f5fbff; }
 .faq-a { padding: 12px 16px; color: #333; }
-summary::-webkit-details-marker { display: none; }
+.faq-item[open] .faq-q::before { transform: translateY(-50%) rotate(90deg); border-left-color: $osd-navy; }
+
+/* Ensure headings have breathing room after accordions */
+.page h2 { padding-top: 0.75rem; }
+main.site-main h2 { padding-top: 0.75rem; }
+main.site-main h3 { padding-top: 0.6rem; }

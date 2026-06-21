@@ -5,9 +5,9 @@
 
 {% for entry in site.data.navigation %}
 {% if entry.absolute %}
-  {% capture fullurl %}{{ entry.url }}{% endcapture %}
+    {% capture fullurl %}{{ entry.url }}{% endcapture %}
 {% else %}
-  {% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}
+    {% capture fullurl %}{{ entry.url | relative_url }}{% endcapture %}
 {% endif %}
     {% if fullurl == page.url %}
         {% assign current_page = fullurl %}
@@ -30,18 +30,18 @@
         {% assign sublinks = entry.sublinks %}
         {% if sublinks %}
         <li{{ current }}  class="pure-menu-item pure-menu-has-children pure-menu-allow-hover" >
-            <a href="{% if entry.absolute %}{{ entry.url }}{% else %}{{ site.baseurl }}{{ entry.url }}{% endif %}" class="pure-menu-link">{{ entry.title }}</a>
+            <a href="{% if entry.absolute %}{{ entry.url }}{% else %}{{ entry.url | relative_url }}{% endif %}" class="pure-menu-link">{{ entry.title }}</a>
             <ul class="pure-menu-children">
                 {% for sublink in sublinks %}
                 <li class="pure-menu-item">
-                    <a href="{% if sublink.absolute %}{{ sublink.url }}{% else %}{{ site.baseurl }}{{ sublink.url }}{% endif %}" class="pure-menu-link"> {{ sublink.title }}</a>
+                    <a href="{% if sublink.absolute %}{{ sublink.url }}{% else %}{{ sublink.url | relative_url }}{% endif %}" class="pure-menu-link"> {{ sublink.title }}</a>
                 </li>
                 {% endfor %}
             </ul>
         </li>
         {% else %}
         <li{{ current }}  class="pure-menu-item">
-            <a href="{% if entry.absolute %}{{ entry.url }}{% else %}{{ site.baseurl }}{{ entry.url }}{% endif %}" class="pure-menu-link">{{ entry.title }}</a>
+            <a href="{% if entry.absolute %}{{ entry.url }}{% else %}{{ entry.url | relative_url }}{% endif %}" class="pure-menu-link">{{ entry.title }}</a>
         </li>
         {% endif %}
     {% endfor %}

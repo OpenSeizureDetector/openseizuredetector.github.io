@@ -148,6 +148,23 @@ The one situation where I would still recommend using a Garmin watch is if you w
 
 If I get time I hope to do some research to improve the PineTime one with a software fix.
 
+### Can you mute alarms on PineTime like you can with Garmin?
+
+No, not at the moment - once more people are using PineTime I can implement this feature if
+they request it.
+
+
+### The PineTime watch does not reconnect to the phone
+
+If the PineTime watch has been disconnected for an extended period (several hours) I sometimes find it does not reconnect automatically so the phone continues to show 'FAULT' even when the watch is in range, and the bluetooth icon appears on the watch to suggest it is connected.
+
+I don't know what causes this, but the way to fix it is to re-boot the watch - press and hold the watch button for ~10 seconds until the screen goes blank and a PineCone icon starts to appear on it.  Then release the button and the watch should re-start normally.
+
+
+### The PineTime watch is just showing an 'InfiniTime' screen without the usual display or controls.
+
+You have somehow ended up in the recovery firmware.   You can try rebooting the watch (press the button until the screen blanks and a pinecone starts to appear, then release the button).   This might get you back to the OpenSeizureDetector firmware...but probably won't.   The thing to do is to re-flash the OpenSeizureDetector by using the PineTime Updater app that you used when you first set up the watch.
+
 ## Garmin Seizure Detector
 
 ### Watch Error Codes
@@ -182,14 +199,18 @@ A user has reported this as a problem on a Fenix 6 – it seems there is a power
 
 ## Other Watches
 
+### Android Wear
+
+We do not have a working Android Wear implementation yet, but several developers are thinking about it, so we might have something ready for testing later this year.
+
 ### BangleJS
 
 We have a version for a watch called [BangleJS](https://banglejs.com/) where OpenSeizureDetector can run as a 'widget' on the watch face, so you can customise the watch face etc and still use OpenSeizureDetector with it – please get in touch if you are interested in trying it.
 
 
-## Contact
+# Contact
 
-To get in touch please email graham@openseizuredetector.org.uk
+To get in touch please email [graham@openseizuredetector.org.uk](mailto:graham@openseizuredetector.org.uk)
 
 <script>
 document.addEventListener('DOMContentLoaded', function(){
