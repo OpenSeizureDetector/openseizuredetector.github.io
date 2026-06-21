@@ -1,7 +1,7 @@
-# New OpenSeizureDetector Web Site (2024)
-This repository is the source for the new OpenSeizureDetector project web site (https://openseizuredetector.github.io).
+# New OpenSeizureDetector Web Site (2026)
+This repository is the source for the new OpenSeizureDetector project web site (https://openseizuredetector.org.uk).
 
-Please see the [website page](https://openseizuredetector.github.io/pages-developer/website.html#openseizuredetector.github.io) for advice on contributing changes to the site content or structure.
+I will be very pleased to receive proposals for changes to the site via github pull requests, or email (graham@openseizuredetector.org.uk).
 
 ## Building and Deploying on Linux
 
