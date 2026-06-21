@@ -751,3 +751,23 @@ footer {
   margin-top: 2rem;
   font-size: 0.9rem;
 }
+
+/* FAQ accordion styles */
+.faq-item {
+  border: 1px solid #e6edf3;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  background: #fff;
+}
+.faq-q {
+  cursor: pointer;
+  padding: 12px 16px;
+  font-weight: 700;
+  color: $osd-navy;
+  list-style: none;
+}
+.faq-q::marker { display: none; }
+.faq-item[open] .faq-q { background: #f5fbff; }
+.faq-a { padding: 12px 16px; color: #333; }
+summary::-webkit-details-marker { display: none; }

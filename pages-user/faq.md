@@ -190,3 +190,34 @@ We have a version for a watch called [BangleJS](https://banglejs.com/) where Ope
 ## Contact
 
 To get in touch please email graham@openseizuredetector.org.uk
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+	if (!/faq/i.test(window.location.pathname)) return;
+	var container = document.querySelector('.page-content') || document.querySelector('.section-content') || document.querySelector('main.site-main');
+	if (!container) return;
+	// Collect heading nodes first to avoid live DOM issues
+	var headers = Array.from(container.querySelectorAll('h3'));
+	headers.forEach(function(h3){
+		// Create details/summary wrapper
+		var details = document.createElement('details');
+		details.className = 'faq-item';
+		var summary = document.createElement('summary');
+		summary.className = 'faq-q';
+		summary.innerHTML = h3.innerHTML;
+		details.appendChild(summary);
+
+		// Move following siblings into the answer container until next h2 or h3
+		var contentWrap = document.createElement('div');
+		contentWrap.className = 'faq-a';
+		var node = h3.nextSibling;
+		while(node && !(node.nodeType===1 && (node.tagName.toLowerCase()==='h3' || node.tagName.toLowerCase()==='h2'))){
+			var next = node.nextSibling;
+			contentWrap.appendChild(node);
+			node = next;
+		}
+		details.appendChild(contentWrap);
+		h3.parentNode.replaceChild(details, h3);
+	});
+});
+</script>
