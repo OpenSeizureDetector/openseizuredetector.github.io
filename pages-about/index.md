@@ -7,8 +7,8 @@ intro: >
   tonic-clonic seizures using a smartwatch and Android phone and alert carers.
 
   <br/>
-      <img src="/assets/images/OSD_PineTime.jpg" alt="PineTime watch running OpenSeizureDetector software (ok status)" style="max-width: 100px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); vertical-align: text-top;">
-      <img src="/assets/images/Basic_Mode_ALARM.jpg" alt="Screenshot of the OpenSeizureDetector app (ALARM status)" style="max-height: 300px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); vertical-align: text-top;">
+      <img src="images/OSD_PineTime.jpg" alt="PineTime watch running OpenSeizureDetector software (ok status)" style="max-width: 100px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); vertical-align: text-top;">
+      <img src="images/Basic_Mode_ALARM.jpg" alt="Screenshot of the OpenSeizureDetector app (ALARM status)" style="max-height: 300px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); vertical-align: text-top;">
 
 
 cards:
@@ -29,6 +29,8 @@ cards:
         url: /pages-about/how-it-works.html
       - text: More Information
         url: /pages-user/index.html
+      - text: Frequentyl Asked Questions (FAQ)
+        url: /pages-user/faq.html
 
   - title: Privacy
     description: How we handle your data
@@ -42,5 +44,16 @@ cards:
       - text: Other Projects
         url: /pages-about/similar-projects.html
 
+  - title: Contact
+    description: For more information, please contact Graham Jones, who is the main author and maintainer of the system.
+    links:
+      - text: graham@openseizuredetector.org.uk
+        url: mailto:graham@openseizuredetector.org.uk
+      - text: Facebook OpenSeizureDetector Page
+        url: https://facebook.com/openseizuredetector
+      - text: LinkedIn (Graham Jones)
+        url: https://www.linkedin.com/in/graham-jones-4779892b/
+      - text: OrcId (Graham Jones)
+        url: https://orcid.org/0009-0007-6913-8592
 
 ---

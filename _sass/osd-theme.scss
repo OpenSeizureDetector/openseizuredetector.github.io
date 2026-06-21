@@ -270,8 +270,17 @@ nav.pure-menu-horizontal {
   }
 }
 
-section {
+
+main.site-main { 
   padding: 20px 24px;
+  font-size: 16px;
+  background: $osd-white;
+  border-radius: 0 0 8px 8px;
+  position: relative;
+}
+
+section {
+  padding: 0px 0px;
   font-size: 16px;
   border-top: none;
   background: $osd-white;
