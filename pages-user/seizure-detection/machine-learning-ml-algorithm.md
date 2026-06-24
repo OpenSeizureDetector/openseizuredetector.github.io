@@ -8,7 +8,7 @@ title: Machine Learning (ML) Algorithm
 The ML algorithm estimates seizure probability from recent motion data using installed ML models.
 In current app versions, multiple ML models can be installed and run.
 
-The various available models are described on the [ml-models](./ml-models/index.md) page.
+The various available models are described on the [ml-models](./ml-models/index.html) page.
 
 ## How it works
 
