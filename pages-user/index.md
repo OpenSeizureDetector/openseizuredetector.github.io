@@ -19,7 +19,7 @@ cards:
       - text: Using OpenSeizureDetector
         url: /pages-user/using-openseizuredetector-v5.html
       - text: Seizure Detection Algorithms
-        url: /pages-user/seizure-detection/
+        url: /pages-user/seizure-detection/index.html
 
   - title: Data Sharing
     description: Contribute your data to improve the system.
