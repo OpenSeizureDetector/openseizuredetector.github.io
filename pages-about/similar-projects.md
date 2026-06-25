@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page-wide
 title: Similar Projects
 ---
 
@@ -9,11 +9,6 @@ I am happy to receive suggestions for others to add or corrections if I have got
 
 Please contact graham@openseizuredetector.org.uk if you think anything needs to be changed, or if you have a better reference for the performance of a device.
 
-**Notes:**
-- *Fault Detection* indicates whether the system detects device/link/alert failures to warn the user of problems rather than failing silently if it is not working.
-- *Internet Dependency* distinguishes internet requirements for detection vs alerting purposes.
-- Performance metrics are **not directly comparable** due to differing study designs and populations, but I have tried to quote published data where available.
-- The table below is quite wide - there is a scroll bar at the bottom of the table to allow you to view the additional columns.
 
 ---
 
@@ -146,9 +141,71 @@ Please contact graham@openseizuredetector.org.uk if you think anything needs to 
 <td>Unknown</td>
 </tr>
 
+
+<tr>
+<td><b><a href="https://www.medicalsupplies.co.uk/emfit-epilepsy-tonic-clonic-seizure-bed-sensor-mat-with-monitor.html?gad_source=1&gad_campaignid=20496752563&gbraid=0AAAAADPPc1YFrPaZ1iHvOCkQtRpQlmCrJ&gclid=Cj0KCQjwo_PRBhDNARIsAEcVALWFIuDthm4AeCA3o374Tkci1vUDE69sUUg5UmOSywzm5M5QdCtfjfEaAmQLEALw_wcB">Emfit</a></b></td>
+<td>Bed Sensor</td>
+<td>Movement</td>
+<td>Peer Reviewed Study [9]</td>
+<td>Unknown</td>
+<td>None</td>
+<td>Local Alarm</td>
+<td>£450 (no subscription)</td>
+<td>67% [9]</td>
+<td>0.007 per day (very low)</td>
+<td>Epilepsy Monitoring Unit [9]</td>
+</tr>
+
+<tr>
+<td><b><a href="https://www.samialert.com/">SAMI</a></b></td>
+<td>Camera Based</td>
+<td>Movement</td>
+<td>Unknown</td>
+<td>Unknown</td>
+<td>None</td>
+<td>Wifi (dedicated network)</td>
+<td>£1005 (assuming VAT exempt). No subscription</td>
+<td>Unknown, but good user reports [10]</td>
+<td>Unknwon</td>
+<td>Unknown</td>
+</tr>
+
+
 </table>
 
 </div>
+
+---
+
+## References
+
+[1] [Empatica seizure detection study (Epilepsia)](https://onlinelibrary.wiley.com/doi/10.1111/epi.13681) [1](https://www.sciencedaily.com/releases/2017/10/171031084830.htm)  
+
+[2] [SeizAlarm documentation](https://www.seizalarm.com/false-alarm-reduction-tips)  
+
+[3] [SmartMonitor study summary](https://epilepsysolutions.co.uk/inspyre-faqs)   
+
+[4] [Brain Sentinel Summary](https://www.prweb.com/releases/brain_sentinel_s_speac_system_demonstrates_equivalence_in_sensitivity_to_detect_generalized_tonic_clonic_seizures_to_video_eeg/prweb14746451.htm)  
+
+[5] [NightWatch study (Neurology)](https://nightwatchepilepsy.com/wp-content/uploads/2022/03/Neurology_NightWatch_Multimodal-nocturnal-seizure-detection-in-a-residential-care-setting.pdf)  
+
+[6] [OpenSeizureDetector ML Algorithm performance using user-supplied data](https://www.openseizuredetector.org.uk/static/osd_pages/pages-user/seizure-detection/ml-models/deepEpiCnn-24/OSD_ML_Model_Development_Report_Draft_C.pdf).  Uses real-world data.
+
+[7] [EpiHunter performance summary](https://www.epilepsysparks.com/epihunter)  
+
+[8] [Owlet User Manual](https://cdn.shopify.com/s/files/1/0050/6508/0945/files/Dream_Sock_User_Manual.pdf?v=1741191796)
+
+[9] [Nouboue et. al. (2023). Assessment of an under-mattress sensor as a seizure detection tool in an adult epilepsy monitoring unit. Seizure: European Journal of Epilepsy, 105, 17–21. ](https://doi.org/10.1016/j.seizure.2023.01.005)
+
+[10] [SAMI3 Information, ratings and feedback](https://www.epilepsy.org.uk/epilepsy-technology-guide-sami-3-kit)
+
+---
+
+**Notes:**
+- *Fault Detection* indicates whether the system detects device/link/alert failures to warn the user of problems rather than failing silently if it is not working.
+- *Internet Dependency* distinguishes internet requirements for detection vs alerting purposes.
+- Performance metrics are **not directly comparable** due to differing study designs and populations, but I have tried to quote published data where available.
+- The table below is quite wide - there is a scroll bar at the bottom of the table to allow you to view the additional columns.
 
 ---
 
@@ -174,24 +231,6 @@ Please contact graham@openseizuredetector.org.uk if you think anything needs to 
 We have tried to include available figures to give an indication of the likely performance comparison.
 
 ---
-
-## References
-
-[1] [Empatica seizure detection study (Epilepsia)](https://onlinelibrary.wiley.com/doi/10.1111/epi.13681) [1](https://www.sciencedaily.com/releases/2017/10/171031084830.htm)  
-
-[2] [SeizAlarm documentation](https://www.seizalarm.com/false-alarm-reduction-tips)  
-
-[3] [SmartMonitor study summary](https://epilepsysolutions.co.uk/inspyre-faqs)   
-
-[4] [Brain Sentinel Summary](https://www.prweb.com/releases/brain_sentinel_s_speac_system_demonstrates_equivalence_in_sensitivity_to_detect_generalized_tonic_clonic_seizures_to_video_eeg/prweb14746451.htm)  
-
-[5] [NightWatch study (Neurology)](https://nightwatchepilepsy.com/wp-content/uploads/2022/03/Neurology_NightWatch_Multimodal-nocturnal-seizure-detection-in-a-residential-care-setting.pdf)  
-
-[6] [Analysis of OpenSeizureDetector using user-reported data](https://github.com/OpenSeizureDetector/Android_Pebble_SD/issues/240#issuecomment-4668560405) - a better reference to follow.
-
-[7] [EpiHunter performance summary](https://www.epilepsysparks.com/epihunter)  
-
-[8] [Owlet User Manual](https://cdn.shopify.com/s/files/1/0050/6508/0945/files/Dream_Sock_User_Manual.pdf?v=1741191796)
 
 
 ## Projects in Development
