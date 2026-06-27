@@ -18,6 +18,10 @@ DeepEpiCnn_Run24 is the first model that I am sufficienlty confident in that we 
 
 The model was trained using the Open Seizure Database which is data contributed by OpenSeizureDetector users via our 'Data Sharing' System - it was trained using 178 seizure events and tested using 44 seizure devents.
 
+  - A technical report on the training and validation of the model [OSDM_ML_Model_development_Report](./OSD_ML_Model_Development_Report_Draft_C.pdf)
+  - Analysis of the original test dataset (based on V1.10 of the OSDB) - [Summary Report](./event_analysis_report.pdf), [Data](./event_analysis_report.txt)
+
+
 ## Training Data
 The model was trained using Version 1.10 of the [Open Seizure Database](https://www.techrxiv.org/doi/full/10.36227/techrxiv.23957625.v1), which was produced from data contributed by users of OpenSeizureDetector using our [Data Sharing system](https://www.openseizuredetector.org.uk/openseizuredetector-data-sharing/).
 
